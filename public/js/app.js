@@ -107,27 +107,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar vía Web3Forms (Ultra confiable, entrega en 2 segundos, 0 publicidad)
-        const response = await fetch('https://api.web3forms.com/submit', {
+        // Enviar vía EmailJS con plantilla corporativa 100% en español (Sin inglés, sin publicidad)
+        const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
-            subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
-            from_name: 'ConixDev Notificaciones',
-            replyto: whatsapp,
-            "👤 Nombre del Contacto": nombre,
-            "🏢 Empresa": empresa,
-            "📱 WhatsApp / Teléfono": whatsapp,
-            "💰 Presupuesto Estimado": presupuesto,
-            "📋 Descripción del Proyecto": proceso
+            service_id: 'service_ot3xhz4',
+            template_id: 'kupll2s',
+            user_id: 'OrR_fSm23CEIWNfFE',
+            template_params: {
+              nombre: nombre,
+              empresa: empresa,
+              whatsapp: whatsapp,
+              presupuesto: presupuesto,
+              proceso: proceso
+            }
           })
         });
-
-        const result = await response.json();
 
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
