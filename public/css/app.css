@@ -372,6 +372,8 @@ h1, h2, h3, h4 {
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.08;
+  transition: transform 0.15s ease-out;
+  transform-style: preserve-3d;
 }
 
 .title-section {
@@ -385,9 +387,26 @@ h1, h2, h3, h4 {
 }
 
 .text-gradient {
-  background: var(--brand-gradient);
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 45%, #0284c7 80%, #06b6d4 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: shineGradient 6s linear infinite;
+  filter: drop-shadow(0 0 18px rgba(56, 189, 248, 0.35));
+}
+
+@keyframes shineGradient {
+  0% { background-position: 0% center; }
+  50% { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+body.light-theme .text-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #0284c7 50%, #06b6d4 100%) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: none !important;
 }
 
 .text-muted {
@@ -1102,9 +1121,40 @@ body.light-theme .visual-frame-bar {
   color: #0f172a !important;
 }
 
-body.light-theme .visual-frame-body {
-  border-color: #cbd5e1 !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 25px rgba(2, 132, 199, 0.15) !important;
+/* Futuristic Laser Scanning Beam Line (Cinematic Movie Intro) */
+.laser-scan-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, rgba(56, 189, 248, 0.9) 50%, transparent 100%);
+  box-shadow: 0 0 20px #06b6d4, 0 0 40px #38bdf8;
+  z-index: 9999;
+  pointer-events: none;
+  animation: laserScan 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
+
+@keyframes laserScan {
+  0% { top: -10px; opacity: 1; }
+  85% { top: 100vh; opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}
+
+/* Particle Canvas Backdrop */
+#cinematicCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.75;
+}
+
+body.light-theme #cinematicCanvas {
+  opacity: 0.3;
+}
+
 
 
