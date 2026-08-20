@@ -107,27 +107,40 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar por AJAX vía Web3Forms (Cero publicidad, 100% limpio y profesional)
-        const response = await fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
-            subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
-            from_name: 'ConixDev Notificaciones',
-            replyto: whatsapp,
-            "👤 Nombre del Contacto": nombre,
-            "🏢 Empresa": empresa,
-            "📱 WhatsApp / Teléfono": whatsapp,
-            "💰 Presupuesto Estimado": presupuesto,
-            "📋 Descripción del Proyecto": proceso
-          })
-        });
+        // Enviar por nuestra propia API serverless con diseño HTML de lujo 100% en español
+        let sentOk = false;
+        try {
+          const apiRes = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ nombre, empresa, whatsapp, presupuesto, proceso })
+          });
+          if (apiRes.ok) sentOk = true;
+        } catch (e) {
+          console.warn('Fallback a Web3Forms...');
+        }
 
-        const result = await response.json();
+        if (!sentOk) {
+          // Fallback a Web3Forms con formato en español
+          await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
+              subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
+              from_name: 'ConixDev Notificaciones',
+              replyto: whatsapp,
+              "👤 Nombre del Contacto": nombre,
+              "🏢 Empresa": empresa,
+              "📱 WhatsApp / Teléfono": whatsapp,
+              "💰 Presupuesto Estimado": presupuesto,
+              "📋 Descripción del Proyecto": proceso
+            })
+          });
+        }
 
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
