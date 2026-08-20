@@ -107,12 +107,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar por nuestra propia API serverless con diseño HTML de lujo 100% en español
-        const apiRes = await fetch('/api/contact', {
+        // Enviar vía Web3Forms (Ultra confiable, entrega en 2 segundos, 0 publicidad)
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ nombre, empresa, whatsapp, presupuesto, proceso })
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
+            subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
+            from_name: 'ConixDev Notificaciones',
+            replyto: whatsapp,
+            "👤 Nombre del Contacto": nombre,
+            "🏢 Empresa": empresa,
+            "📱 WhatsApp / Teléfono": whatsapp,
+            "💰 Presupuesto Estimado": presupuesto,
+            "📋 Descripción del Proyecto": proceso
+          })
         });
+
+        const result = await response.json();
 
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
