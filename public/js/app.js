@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconDark = document.querySelector('.theme-icon-dark');
     const iconLight = document.querySelector('.theme-icon-light');
     if (iconDark && iconLight) {
-      iconDark.style.display = isLight ? 'none' : 'inline';
-      iconLight.style.display = isLight ? 'inline' : 'none';
+      iconDark.style.display = isLight ? 'none' : 'inline-block';
+      iconLight.style.display = isLight ? 'inline-block' : 'none';
     }
   }
 
