@@ -11,3 +11,7 @@
 
 3. **Muestras Médicas Éticas**:
    - Usar siempre nombres genéricos de demostración (`MEDICAMENTO DEMO A`, `FÁRMACO GENÉRICO B`), evitando marcas comerciales reales por confidencialidad.
+
+4. **Sin Menciones de Facturación SRI Directa**:
+   - No promocionar servicios de integración directa con Web Services del SRI, comprobantes XML ni firma p12. Enfocarse en integraciones de APIs generales, ERPs, CRMs y pasarelas de pago.
+

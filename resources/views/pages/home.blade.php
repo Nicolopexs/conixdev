@@ -191,7 +191,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
         </div>
         <h3 class="title-card" style="margin-bottom: 0.5rem;">Arquitectura e Integración de APIs</h3>
-        <p class="body-sm" style="margin-bottom: 1rem;">Conexión de sistemas con el SRI (facturación electrónica), pasarelas de pago (Kushki, Payphone, Stripe), ERPs y plataformas contables.</p>
+        <p class="body-sm" style="margin-bottom: 1rem;">Conexión de sistemas con APIs externas, pasarelas de pago (Kushki, Payphone, Stripe), ERPs y plataformas contables u operativas.</p>
         <a href="{{ url('/desarrollo-software-ecuador') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Ver Integraciones en Ecuador →</a>
       </div>
     </div>
@@ -224,8 +224,8 @@
 
       <div class="card-box">
         <div style="font-size: 2rem; margin-bottom: 0.75rem;">💳</div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Finanzas & Facturación SRI</h3>
-        <p class="body-sm">Módulos de emisión masiva de comprobantes electrónicos, retenciones, notas de crédito y conciliación bancaria automatizada.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Finanzas & Control Operativo</h3>
+        <p class="body-sm">Módulos de control de gastos, liquidación de rutas, gestión de cuentas por cobrar y conciliación bancaria automatizada.</p>
       </div>
 
       <div class="card-box">
@@ -337,8 +337,8 @@
       </div>
 
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Cumplimiento Legal y SRI</h3>
-        <p class="body-sm">Sistemas preparados para la normativa tributaria ecuatoriana, facturación electrónica y retenciones del SRI.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Adaptación a Procesos Locales</h3>
+        <p class="body-sm">Sistemas preparados para responder a los flujos operativos, comerciales y administrativos de empresas en Ecuador.</p>
       </div>
 
       <div class="card-box">
@@ -374,8 +374,8 @@
       </div>
 
       <div class="card-box">
-        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿Cómo se integra el software con la facturación electrónica del SRI?</h3>
-        <p class="body-sm">Construimos servicios de integración directa con los Web Services del SRI para emisión de facturas XML, firma electrónica (.p12), autorización automática y envío de RIDE por correo electrónico.</p>
+        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿Cómo se integra el software a medida con mis sistemas existentes?</h3>
+        <p class="body-sm">Desarrollamos conectores de API REST y Webhooks para integrar la nueva plataforma de forma transparente con tus bases de datos actuales, plataformas contables, CRM o herramientas operativas.</p>
       </div>
     </div>
   </div>
