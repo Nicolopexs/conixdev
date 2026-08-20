@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar por AJAX al correo info@conixdev.com
+        // Enviar por AJAX al correo info@conixdev.com con remitente personalizado ConixDev Leads
         await fetch('https://formsubmit.co/ajax/info@conixdev.com', {
           method: 'POST',
           headers: {
@@ -115,13 +115,16 @@ document.addEventListener('DOMContentLoaded', () => {
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            _subject: `Nuevo Proyecto ConixDev: ${empresa} (${presupuesto})`,
-            "Nombre Completo": nombre,
+            _subject: `ConixDev Leads | ${empresa || 'Nuevo Cliente'} (${presupuesto})`,
+            _replyto: whatsapp,
+            _captcha: 'false',
+            _template: 'table',
+            "Remitente": "ConixDev Leads <info@conixdev.com>",
+            "Nombre del Cliente": nombre,
             "Empresa": empresa,
-            "Contacto (WhatsApp / Email)": whatsapp,
+            "WhatsApp / Correo de Contacto": whatsapp,
             "Presupuesto Estimado": presupuesto,
-            "Requerimiento del Proyecto": proceso,
-            _template: 'table'
+            "Requerimiento del Proyecto": proceso
           })
         });
 
