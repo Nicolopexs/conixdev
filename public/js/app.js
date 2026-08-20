@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const nombre = document.getElementById('nombre')?.value || '';
       const empresa = document.getElementById('empresa')?.value || '';
       const whatsapp = document.getElementById('whatsapp')?.value || '';
+      const presupuesto = document.getElementById('presupuesto')?.value || 'No especificado';
       const proceso = document.getElementById('proceso_mejorar')?.value || '';
 
       // Formatear mensaje estructurado profesional para WhatsApp
@@ -90,6 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `• *Nombre:* ${nombre}\n` +
         `• *Empresa:* ${empresa}\n` +
         `• *Contacto:* ${whatsapp}\n` +
+        `• *Presupuesto Estimado:* ${presupuesto}\n` +
         `• *Detalle:* ${proceso}`;
 
       const waURL = `https://wa.me/593962761063?text=${encodeURIComponent(mensajeWA)}`;

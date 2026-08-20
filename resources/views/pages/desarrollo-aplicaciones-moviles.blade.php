@@ -133,6 +133,16 @@
         </div>
 
         <div class="form-field-group">
+          <label class="form-label-simple" for="presupuesto">Presupuesto estimado del proyecto *</label>
+          <select id="presupuesto" name="presupuesto" class="form-input-simple" required style="cursor: pointer; appearance: auto;">
+            <option value="" disabled selected>Selecciona un rango de presupuesto...</option>
+            <option value="$3,000 - $5,000 USD">$3,000 – $5,000 USD (Prototipo / Módulo Base)</option>
+            <option value="$5,000 - $10,000 USD">$5,000 – $10,000 USD (Sistema Empresarial Completo)</option>
+            <option value="Más de $10,000 USD">Más de $10,000 USD (Plataforma Corporativa Avanzada)</option>
+          </select>
+        </div>
+
+        <div class="form-field-group">
           <label class="form-label-simple" for="proceso_mejorar">¿Qué función debe tener tu aplicación móvil? *</label>
           <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Requerimos una app móvil para que nuestros supervisores registren visitas con GPS..." required></textarea>
         </div>
