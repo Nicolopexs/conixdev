@@ -206,6 +206,7 @@
     </div>
   </footer>
 
-  <script src="{{ asset('js/app.js') }}?v=6.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="{{ asset('js/app.js') }}?v=6.1.0"></script>
 </body>
 </html>

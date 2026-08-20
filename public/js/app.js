@@ -107,26 +107,35 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar vía EmailJS con plantilla corporativa 100% en español (Sin inglés, sin publicidad)
-        const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            service_id: 'service_ot3xhz4',
-            template_id: 'kupll2s',
-            user_id: 'OrR_fSm23CEIWNfFE',
-            template_params: {
-              nombre: nombre,
-              empresa: empresa,
-              whatsapp: whatsapp,
-              presupuesto: presupuesto,
-              proceso: proceso
-            }
-          })
-        });
+        // Enviar con SDK oficial de EmailJS
+        if (typeof emailjs !== 'undefined') {
+          emailjs.init('OrR_fSm23CEIWNfFE');
+          await emailjs.send('service_ot3xhz4', 'kupll2s', {
+            nombre: nombre,
+            empresa: empresa,
+            whatsapp: whatsapp,
+            presupuesto: presupuesto,
+            proceso: proceso
+          });
+        } else {
+          // Fallback fetch API
+          await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              service_id: 'service_ot3xhz4',
+              template_id: 'kupll2s',
+              user_id: 'OrR_fSm23CEIWNfFE',
+              template_params: {
+                nombre: nombre,
+                empresa: empresa,
+                whatsapp: whatsapp,
+                presupuesto: presupuesto,
+                proceso: proceso
+              }
+            })
+          });
+        }
 
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
@@ -136,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactForm.reset();
       } catch (err) {
-        console.error('Error enviando formulario:', err);
+        console.error('Error enviando con EmailJS:', err);
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
           contactSuccessAlert.innerHTML = '✔ ¡Mensaje recibido! Nos pondremos en contacto contigo a la brevedad.';
