@@ -107,30 +107,31 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar por AJAX al correo info@conixdev.com con remitente personalizado ConixDev Leads
-        await fetch('https://formsubmit.co/ajax/info@conixdev.com', {
+        // Enviar por AJAX vía Web3Forms (Cero publicidad, 100% limpio y profesional)
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            _subject: `ConixDev Leads | ${empresa || 'Nuevo Cliente'} (${presupuesto})`,
-            _replyto: whatsapp,
-            _captcha: 'false',
-            _template: 'table',
-            "Remitente": "ConixDev Leads <info@conixdev.com>",
+            access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
+            subject: `ConixDev Leads | ${empresa || 'Nuevo Cliente'} (${presupuesto})`,
+            from_name: 'ConixDev Leads',
+            replyto: whatsapp,
             "Nombre del Cliente": nombre,
             "Empresa": empresa,
-            "WhatsApp / Correo de Contacto": whatsapp,
+            "WhatsApp / Correo": whatsapp,
             "Presupuesto Estimado": presupuesto,
             "Requerimiento del Proyecto": proceso
           })
         });
 
+        const result = await response.json();
+
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
-          contactSuccessAlert.innerHTML = `✔ <strong>¡Solicitud enviada a info@conixdev.com!</strong><br><span style="font-size: 0.9rem; font-weight: normal;">Nos pondremos en contacto contigo a la brevedad posible.</span>`;
+          contactSuccessAlert.innerHTML = `✔ <strong>¡Solicitud enviada a ConixDev con éxito!</strong><br><span style="font-size: 0.9rem; font-weight: normal;">Nos pondremos en contacto contigo a la brevedad posible.</span>`;
           contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
