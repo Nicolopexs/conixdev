@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
               window.emailjs.init('OrR_fSm23CEIWNfFE');
             }
             
-            const response = await window.emailjs.send('service_ot3xhz4', 'kupll2s', {
+            const response = await window.emailjs.send('service_ot3xhz4', 'template_dyvkpfl', {
               nombre: nombre,
               empresa: empresa,
               whatsapp: whatsapp,
