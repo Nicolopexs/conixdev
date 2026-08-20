@@ -3,96 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Caso de Éxito: Cassará Ecuador | ConixDev</title>
-  <meta name="description" content="Plataforma empresarial a medida desarrollada por ConixDev para digitalizar la operación de visitadores médicos, geolocalización y procesamiento de facturas con IA." />
+  <title>Caso de Éxito: Cassará Ecuador | ConixDev Software</title>
+  <meta name="description" content="Estudio de caso visual de la plataforma empresarial desarrollada a medida por ConixDev para Cassará Ecuador: geolocalización de visitadores y escaneo de facturas con IA." />
   <link rel="canonical" href="https://conixdev.com/casos-de-exito/cassara-ecuador" />
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../css/app.css?v=2.0.0" />
+  
+  <!-- Absolute path to app.css for Cloudflare Workers/Pages deep links -->
+  <link rel="stylesheet" href="/css/app.css?v=3.0.0" />
 </head>
 <body>
-  <div class="bg-grid-overlay"></div>
+  <div class="canvas-grid"></div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="../../" class="brand-logo">CONIX<span>DEV</span> <span class="brand-tag">v2.0</span></a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="../../" class="nav-link">Inicio</a></li>
-        <li><a href="../../servicios" class="nav-link">Servicios</a></li>
-        <li><a href="../../casos-de-exito" class="nav-link">Casos de Éxito</a></li>
-        <li><a href="../../casos-de-exito/cassara-ecuador" class="nav-link active">Cassará Ecuador</a></li>
-        <li><a href="../../nosotros" class="nav-link">Sobre ConixDev</a></li>
-        <li><a href="../../contacto" class="nav-link">Contacto</a></li>
-        <li><a href="../../diagnostico" class="btn btn-primary" style="padding: 0.5rem 1.15rem;">Diagnóstico CTA</a></li>
+  <!-- Header Navigation Bar -->
+  <header class="nav-header">
+    <div class="container nav-container">
+      <a href="/" class="brand-wrapper">
+        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0284c7" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
+          <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
+          <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
+          <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
+          <rect x="84" y="27" width="9" height="9" fill="#06b6d4" rx="2" />
+          <rect x="78" y="38" width="9" height="9" fill="#38bdf8" rx="2" />
+        </svg>
+        <span class="brand-text">Conix<span>Dev</span></span>
+      </a>
+
+      <ul class="nav-links-wrap" id="navLinksWrap">
+        <li><a href="/" class="nav-item-link">Inicio</a></li>
+        <li><a href="/casos-de-exito/cassara-ecuador" class="nav-item-link active">Caso Cassará</a></li>
+        <li><a href="/servicios" class="nav-item-link">Capacidades</a></li>
+        <li><a href="/nosotros" class="nav-item-link">Sobre ConixDev</a></li>
+        <li><a href="/contacto" class="nav-item-link">Contacto</a></li>
+        <li><a href="/contacto" class="btn-action btn-primary-glow" style="padding: 0.55rem 1.25rem;">Hablar con ConixDev</a></li>
       </ul>
-      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menú">
+
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Abrir menú">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </div>
   </header>
 
-  <main>
-    <div class="page-banner">
+  <main style="flex: 1;">
+    <section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
       <div class="container">
-        <div class="breadcrumb-nav">
-          <a href="../../">Inicio</a> <span>/</span> <a href="../../casos-de-exito">Casos de Éxito</a> <span>/</span> <span style="color: var(--text-primary);">Cassará Ecuador</span>
+        <div style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+          <a href="/" style="color: var(--text-muted); text-decoration: none;">Inicio</a> / 
+          <a href="/casos-de-exito" style="color: var(--text-muted); text-decoration: none;">Casos de Éxito</a> / 
+          <span style="color: var(--brand-cyan-glow);">Cassará Ecuador</span>
         </div>
-        <span class="badge-corp">Plataforma Empresarial Entregada</span>
-        <h1 class="heading-xl text-gradient-white" style="margin-bottom: 1rem;">
-          Caso de Éxito: <span class="text-indigo">Cassará Ecuador</span>
+        <span class="trust-badge">Caso de Estudio Estrella</span>
+        <h1 class="title-hero" style="margin-bottom: 1rem;">
+          Caso de Éxito: <span class="text-gradient">Cassará Ecuador</span>
         </h1>
-        <p class="body-lead" style="max-width: 820px;">
-          Plataforma empresarial desarrollada a medida para digitalizar, controlar y auditar la operación completa de visitadores médicos en terreno.
+        <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 820px;">
+          Plataforma empresarial construida a medida para digitalizar, controlar y auditar la operación de visitadores médicos en terreno.
         </p>
       </div>
-    </div>
+    </section>
 
-    <section class="section-padding">
+    <section class="section-spacing">
       <div class="container">
-        <div class="showcase-block">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
-            <div>
-              <span class="card-tag">Cliente Empresarial</span>
-              <h2 class="heading-md" style="font-size: 1.6rem;">Cassará Ecuador — Industria Farmacéutica</h2>
-            </div>
-            <div class="tech-matrix" style="margin: 0;">
-              <span class="tech-chip">Laravel Engine</span>
-              <span class="tech-chip">Geolocalización GPS</span>
-              <span class="tech-chip">IA para Facturación</span>
-              <span class="tech-chip">App Móvil de Campo</span>
-            </div>
+        <div class="case-study-hero-card" style="margin-top: 0;">
+          <div style="margin-bottom: 2rem;">
+            <span class="trust-badge" style="margin-bottom: 0.5rem;">Industria Farmacéutica</span>
+            <h2 class="title-section" style="font-size: 1.8rem; margin-top: 0.25rem;">La Necesidad Operativa</h2>
+            <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.7; margin-top: 0.75rem;">
+              Cassará requería reemplazar los reportes en papel, chats de WhatsApp y archivos Excel desactualizados por una plataforma propia que permitiera supervisar las rutas en campo, confirmar las visitas a médicos y farmacias mediante GPS en tiempo real y simplificar la rendición de gastos operativos con inteligencia artificial.
+            </p>
           </div>
 
-          <p class="body-lead" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7;">
-            Cassará requería una solución tecnológica propia que reemplazara los procesos manuales y hojas de cálculo desactualizadas, permitiendo a los líderes supervisar las rutas, confirmar las visitas a médicos y farmacias en tiempo real y automatizar la rendición de gastos operativos con inteligencia artificial.
-          </p>
-
-          <h3 class="heading-md" style="font-size: 1.3rem; margin-top: 2.5rem; margin-bottom: 1.25rem;">
-            Módulos y Capacidades Desarrolladas:
+          <h3 class="title-card" style="margin-bottom: 1.25rem; color: var(--brand-cyan-glow);">
+            Funcionalidades y Módulos Desarrollados:
           </h3>
 
-          <div class="showcase-grid-list">
-            <div class="showcase-item">✓ Geolocalización de visitadores médicos</div>
-            <div class="showcase-item">✓ Registro y control de visitas</div>
-            <div class="showcase-item">✓ Gestión de médicos</div>
-            <div class="showcase-item">✓ Gestión de farmacias</div>
-            <div class="showcase-item">✓ Dashboard para visualizar avance de ciclos</div>
-            <div class="showcase-item">✓ Escaneo de facturas utilizando Inteligencia Artificial</div>
-            <div class="showcase-item">✓ Organización de facturas por lotes</div>
-            <div class="showcase-item">✓ Clasificación de gastos deducibles y no deducibles</div>
-            <div class="showcase-item">✓ Gestión de usuarios y permisos</div>
-            <div class="showcase-item">✓ Reportes para seguimiento de la operación</div>
-            <div class="showcase-item">✓ Aplicación fácil de instalar y utilizar</div>
+          <div class="case-grid-capabilities">
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Geolocalización GPS de visitadores médicos</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Registro y auditoría de visitas</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Gestión de médicos</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Gestión de farmacias</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Dashboard para visualizar avance de ciclos</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Escaneo de facturas utilizando Inteligencia Artificial</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Organización de facturas por lotes</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Gastos deducibles y no deducibles</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Gestión de usuarios y permisos</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Reportes para seguimiento de la operación</span>
+            </div>
+            <div class="capability-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Aplicación fácil de instalar y utilizar</span>
+            </div>
           </div>
 
-          <div style="background: rgba(79, 70, 229, 0.08); border-left: 4px solid var(--brand-indigo-light); padding: 1.75rem 2rem; border-radius: 0 var(--radius-md) var(--radius-md) 0; font-style: italic; color: #e2e8f0; font-size: 1.05rem; margin-top: 2.5rem;">
-            “Cassará demuestra que ConixDev puede convertir una necesidad operativa compleja en una plataforma empresarial funcional.”
+          <div style="margin-top: 3rem; border-top: 1px solid var(--border-subtle); padding-top: 2rem;">
+            <h4 style="font-size: 0.9rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">
+              Sección Técnica Secundaria (Stack & Herramientas):
+            </h4>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+              <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.35rem 0.75rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted);">Laravel Engine</span>
+              <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.35rem 0.75rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted);">MySQL Storage</span>
+              <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.35rem 0.75rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted);">Geolocation API</span>
+              <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.35rem 0.75rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-muted);">AI Document Processing OCR</span>
+            </div>
           </div>
 
           <div style="margin-top: 3rem; text-align: center;">
-            <a href="../../diagnostico" class="btn btn-primary" style="padding: 1rem 2rem;">
+            <a href="/contacto" class="btn-action btn-primary-glow" style="padding: 1rem 2rem;">
               Solicitar una solución similar para mi empresa
             </a>
           </div>
@@ -101,14 +156,64 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer-corporate">
     <div class="container">
-      <div class="footer-bottom">
+      <div class="footer-nav-grid">
+        <div>
+          <a href="/" class="brand-wrapper" style="margin-bottom: 1.25rem;">
+            <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
+              <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
+              <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
+              <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
+              <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
+            </svg>
+            <span class="brand-text">Conix<span>Dev</span></span>
+          </a>
+          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
+            Desarrollamos el software que tu empresa necesita. Transformamos operaciones manuales en sistemas de alto rendimiento.
+          </p>
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--brand-cyan-glow); font-weight: 600;">
+            🇪🇨 Desde Ecuador, construyendo software de nivel internacional.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Empresa</h4>
+          <ul class="footer-nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/casos-de-exito/cassara-ecuador">Caso Cassará Ecuador</a></li>
+            <li><a href="/nosotros">Sobre ConixDev</a></li>
+            <li><a href="/contacto">Contacto Directo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capacidades</h4>
+          <ul class="footer-nav-links">
+            <li><a href="/servicios">Aplicaciones Empresariales</a></li>
+            <li><a href="/servicios">Aplicaciones Móviles</a></li>
+            <li><a href="/servicios">Sistemas de Geolocalización</a></li>
+            <li><a href="/servicios">Inteligencia Artificial & Facturación</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul class="footer-nav-links">
+            <li><a href="/diagnostico">Solicitar Propuesta</a></li>
+            <li><a href="https://wa.me/593991234567" target="_blank">WhatsApp Directo</a></li>
+            <li><a href="https://github.com/Nicolopexs" target="_blank">GitHub Developer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
         <p>© 2026 ConixDev. Todos los derechos reservados. | conixdev.com</p>
-        <p>Desarrollo de Software Empresarial a Medida</p>
+        <p>Software Empresarial Hecho a Medida</p>
       </div>
     </div>
   </footer>
-  <script src="../../js/app.js?v=2.0.0"></script>
+
+  <script src="/js/app.js?v=3.0.0"></script>
 </body>
 </html>
