@@ -282,7 +282,142 @@ h1, h2, h3, h4 {
   transform: translateY(-2px);
 }
 
-/* Hero Live Software Demonstration Frame */
+/* Video Showcase Box */
+.video-showcase-box {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-subtle);
+  margin-bottom: 3rem;
+}
+
+.video-window-bar {
+  background: rgba(14, 22, 38, 0.95);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.video-content-area {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: rgba(7, 9, 18, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video-content-area video, .video-content-area iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.video-placeholder-overlay {
+  text-align: center;
+  padding: 2rem;
+}
+
+.play-icon-glow {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--brand-gradient);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 0 35px rgba(6, 182, 212, 0.5);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.play-icon-glow:hover {
+  transform: scale(1.08);
+}
+
+/* Media Showcase Grid (Capturas y Screenshots) */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.screenshot-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.screenshot-card:hover {
+  border-color: var(--border-active);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.screenshot-img-frame {
+  width: 100%;
+  height: 240px;
+  background: rgba(7, 9, 18, 0.8);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.screenshot-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.screenshot-card:hover .screenshot-img-frame img {
+  transform: scale(1.03);
+}
+
+.screenshot-body {
+  padding: 1.5rem;
+}
+
+.screenshot-tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--brand-cyan-glow);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.screenshot-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.screenshot-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Hero Software Showcase Frame */
 .hero-software-showcase {
   margin-top: 3.5rem;
   background: var(--surface-card);
@@ -577,6 +712,7 @@ textarea.form-input-simple {
 @media (max-width: 992px) {
   .footer-nav-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .case-study-hero-card { padding: 2.5rem 1.5rem; }
+  .screenshots-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
