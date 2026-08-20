@@ -34,15 +34,15 @@
 }
 
 /* ==========================================================================
-   High-Contrast Executive Light Theme Tokens (Stripe / Vercel Grade)
+   High-Contrast Executive Light Theme Tokens (Vercel / Stripe Grade)
    ========================================================================== */
 body.light-theme {
-  --canvas-dark: #f8fafc;
+  --canvas-dark: #ffffff;
   --surface-card: #ffffff;
-  --surface-elevated: #f1f5f9;
-  --surface-hover: #e2e8f0;
+  --surface-elevated: #f8fafc;
+  --surface-hover: #f1f5f9;
 
-  --border-subtle: #cbd5e1;
+  --border-subtle: #e2e8f0;
   --border-active: #0284c7;
 
   --text-main: #0f172a;
@@ -51,6 +51,17 @@ body.light-theme {
 
   --brand-cyan-glow: #0284c7;
   --brand-gradient: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+}
+
+/* Alternate Section Background Class */
+.section-alt-bg {
+  background: rgba(14, 22, 38, 0.4);
+  border-top: 1px solid var(--border-subtle);
+}
+
+body.light-theme .section-alt-bg {
+  background: #f8fafc;
+  border-top-color: #e2e8f0;
 }
 
 body.light-theme .text-gradient {
@@ -73,7 +84,7 @@ body.light-theme .trust-badge-dot {
 
 body.light-theme .nav-header {
   background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #cbd5e1;
+  border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
@@ -93,13 +104,13 @@ body.light-theme .nav-item-link.active {
 
 body.light-theme .canvas-grid {
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
 }
 
 body.light-theme .card-box {
   background: #ffffff;
-  border-color: #cbd5e1;
+  border-color: #e2e8f0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
@@ -123,6 +134,9 @@ body.light-theme .showcase-tab-bar {
 body.light-theme .tab-btn {
   color: #334155;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 
 body.light-theme .tab-btn.active, 
@@ -133,8 +147,8 @@ body.light-theme .tab-btn:hover {
 }
 
 body.light-theme .panel-card {
-  background: #ffffff;
-  border-color: #cbd5e1;
+  background: #f8fafc;
+  border-color: #e2e8f0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
@@ -153,7 +167,7 @@ body.light-theme .panel-value.text-cyan {
 
 body.light-theme .contact-simple-card {
   background: #ffffff;
-  border-color: #cbd5e1;
+  border-color: #e2e8f0;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
 }
 
@@ -177,13 +191,13 @@ body.light-theme .form-input-simple:focus {
 
 body.light-theme .case-study-hero-card {
   background: #ffffff;
-  border-color: #cbd5e1;
+  border-color: #e2e8f0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 body.light-theme .capability-pill {
   background: #f8fafc;
-  border-color: #cbd5e1;
+  border-color: #e2e8f0;
   color: #0f172a;
 }
 
@@ -193,7 +207,7 @@ body.light-theme .capability-pill svg {
 
 body.light-theme .screenshot-card {
   background: #ffffff;
-  border-color: #cbd5e1;
+  border-color: #e2e8f0;
 }
 
 body.light-theme .screenshot-title {
@@ -211,7 +225,7 @@ body.light-theme .ecuador-pride-banner {
 
 body.light-theme .footer-corporate {
   background: #f1f5f9;
-  border-top-color: #cbd5e1;
+  border-top-color: #e2e8f0;
 }
 
 body.light-theme .footer-col-title {
@@ -227,12 +241,12 @@ body.light-theme .footer-nav-links a:hover {
 }
 
 body.light-theme .footer-bottom-bar {
-  border-top-color: #cbd5e1;
+  border-top-color: #e2e8f0;
   color: #64748b;
 }
 
 body.light-theme .theme-toggle-btn {
-  background: #e2e8f0;
+  background: #f1f5f9;
   border-color: #cbd5e1;
   color: #0f172a;
 }
@@ -717,6 +731,9 @@ h1, h2, h3, h4 {
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
 .tab-btn.active, .tab-btn:hover {
