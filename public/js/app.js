@@ -107,17 +107,34 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
+        let sent = false;
+
         if (window.emailjs) {
-          window.emailjs.init({ publicKey: 'OrR_fSm23CEIWNfFE' });
-          await window.emailjs.send('service_ot3xhz4', 'kupll2s', {
-            nombre: nombre,
-            empresa: empresa,
-            whatsapp: whatsapp,
-            presupuesto: presupuesto,
-            proceso: proceso
-          });
-        } else {
-          // Si por alguna razón la CDN no cargó, enviar vía Web3Forms
+          try {
+            window.emailjs.init('OrR_fSm23CEIWNfFE');
+            
+            // Timeout de seguridad de 5 segundos para que NUNCA se trabe la interfaz
+            const sendPromise = window.emailjs.send('service_ot3xhz4', 'kupll2s', {
+              nombre: nombre,
+              empresa: empresa,
+              whatsapp: whatsapp,
+              presupuesto: presupuesto,
+              proceso: proceso
+            }, 'OrR_fSm23CEIWNfFE');
+
+            const timeoutPromise = new Promise((_, reject) => 
+              setTimeout(() => reject(new Error('Timeout')), 5000)
+            );
+
+            await Promise.race([sendPromise, timeoutPromise]);
+            sent = true;
+          } catch (eJsError) {
+            console.warn('EmailJS SDK tuvo demora o error, usando envío secundario...', eJsError);
+          }
+        }
+
+        if (!sent) {
+          // Envío vía Web3Forms instantáneo si EmailJS tarda
           await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -143,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactForm.reset();
       } catch (err) {
-        console.error('Error enviando formulario:', err);
+        console.error('Error procesando formulario:', err);
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
           contactSuccessAlert.innerHTML = '✔ ¡Mensaje recibido! Nos pondremos en contacto contigo a la brevedad.';
