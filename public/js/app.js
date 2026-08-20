@@ -121,3 +121,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// 6. Hero Operating Layer — explorar la misma operación desde tres perspectivas
+document.addEventListener('DOMContentLoaded', () => {
+  const commandCenter = document.querySelector('.hero-command-center');
+  const modeButtons = document.querySelectorAll('.system-mode-btn');
+  if (!commandCenter || modeButtons.length === 0) return;
+
+  const modeCopy = {
+    campo: {
+      eyebrow: 'CONTROL DE OPERACIÓN',
+      title: 'Todo el campo, bajo control.',
+      message: 'Visitadores sincronizados con el panel central'
+    },
+    automatizacion: {
+      eyebrow: 'FLUJOS QUE TRABAJAN SOLOS',
+      title: 'Menos tareas. Más movimiento.',
+      message: 'La información avanza sin perseguirla por WhatsApp'
+    },
+    decisiones: {
+      eyebrow: 'DATOS PARA DECIDIR',
+      title: 'La operación también piensa contigo.',
+      message: 'Cada indicador convierte actividad en dirección'
+    }
+  };
+
+  const selectMode = (mode) => {
+    const copy = modeCopy[mode] || modeCopy.campo;
+    commandCenter.dataset.mode = mode;
+    modeButtons.forEach((button) => {
+      const isActive = button.dataset.systemMode === mode;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
+    const eyebrow = commandCenter.querySelector('[data-mode-eyebrow]');
+    const title = commandCenter.querySelector('[data-mode-title]');
+    const message = commandCenter.querySelector('[data-mode-message]');
+    if (eyebrow) eyebrow.textContent = copy.eyebrow;
+    if (title) title.textContent = copy.title;
+    if (message) message.textContent = copy.message;
+  };
+
+  modeButtons.forEach((button) => {
+    button.addEventListener('click', () => selectMode(button.dataset.systemMode));
+  });
+
+  // Micro-parallax: el panel reacciona al cursor para sentirse como un producto real.
+  const canTilt = window.matchMedia('(pointer: fine) and (prefers-reduced-motion: no-preference)').matches;
+  if (canTilt) {
+    commandCenter.addEventListener('pointermove', (event) => {
+      const bounds = commandCenter.getBoundingClientRect();
+      const x = (event.clientX - bounds.left) / bounds.width - 0.5;
+      const y = (event.clientY - bounds.top) / bounds.height - 0.5;
+      commandCenter.style.setProperty('--card-rotate-y', `${(x * 2.2).toFixed(2)}deg`);
+      commandCenter.style.setProperty('--card-rotate-x', `${(-y * 1.8).toFixed(2)}deg`);
+    });
+    commandCenter.addEventListener('pointerleave', () => {
+      commandCenter.style.setProperty('--card-rotate-y', '0deg');
+      commandCenter.style.setProperty('--card-rotate-x', '0deg');
+    });
+  }
+});

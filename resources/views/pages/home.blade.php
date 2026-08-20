@@ -1,37 +1,36 @@
 @extends('layouts.main')
 
-@section('title', 'ConixDev — Desarrollamos el software que tu empresa necesita')
-@section('description', 'Desarrollo de aplicaciones y software empresarial a medida. Transformamos procesos manuales, Excel y WhatsApp en sistemas operativos eficientes.')
+@section('title', 'Empresa de Desarrollo de Software a Medida en Ecuador | ConixDev')
+@section('description', 'Desarrollo de software empresarial, aplicaciones móviles y automatización con IA en Ecuador. Creamos sistemas a medida para controlar y escalar tu operación.')
 
 @section('content')
-<!-- HERO PRINCIPAL — Impacto Inmediato Sin Frases Genéricas -->
-<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
-  <div class="canvas-glow-1"></div>
+<!-- 1. HERO PRINCIPAL — Posicionamiento Corporativo & SEO Claro -->
+<section class="section-spacing" style="padding-top: 6.5rem; padding-bottom: 2rem; position: relative;">
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 1rem;">
       <span class="trust-badge-dot"></span>
-      Software Empresarial Construido a Medida
+      Ingeniería de Software a Medida en Ecuador & LATAM
     </div>
 
-    <h1 class="title-hero" style="max-width: 980px; margin: 0 auto 1.25rem;">
-      Desarrollamos el <span class="text-gradient">software que tu empresa necesita</span>
+    <h1 class="title-hero" style="max-width: 960px; margin: 0 auto 1.25rem;">
+      Empresa de <span class="text-gradient">Desarrollo de Software</span> a Medida
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 780px; margin: 0 auto 2rem; line-height: 1.6;">
-      Analizamos los problemas de tu operación y construimos aplicaciones web y móviles personalizadas para que tu empresa controle mejor su trabajo y automatice sus procesos.
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2rem; line-height: 1.6;">
+      Construimos plataformas web, aplicaciones móviles y sistemas empresariales personalizados para empresas que necesitan centralizar sus operaciones, automatizar procesos y escalar sin depender de hojas de cálculo ni herramientas genéricas.
     </p>
 
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
-      <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
-        <span>Hablar con ConixDev</span>
+      <a href="#contacto-directo" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
+        <span>Solicitar Diagnóstico de Software</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
       </a>
-      <a href="#cassara-case" class="btn-action btn-secondary-dark" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
-        <span>Ver Trabajo Real</span>
+      <a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="btn-action btn-secondary-dark" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
+        <span>Ver Caso Cassará Ecuador</span>
       </a>
     </div>
 
-    <!-- PREVISUALIZACIÓN INTERACTIVA DE SOFTWARE REAL -->
+    <!-- PREVISUALIZACIÓN DE PLATAFORMA EMPRESARIAL REAL -->
     <div class="hero-software-showcase" style="margin-top: 1.5rem;">
       <div class="showcase-tab-bar">
         <div class="showcase-window-dots">
@@ -46,7 +45,7 @@
           </button>
           <button class="tab-btn" data-tab="tab-ia">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/><circle cx="12" cy="5" r="2"/></svg>
-            <span>Escaneo IA Facturas</span>
+            <span>Lectura IA OCR Facturas</span>
           </button>
           <button class="tab-btn" data-tab="tab-dash">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
@@ -60,32 +59,32 @@
         <div class="showcase-panel active" id="tab-gps">
           <div class="panel-card">
             <div class="panel-label">Trazabilidad de Terreno</div>
-            <div class="panel-value text-cyan">GPS Activo</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Verificación por coordenadas en cada visita médica o comercial.</p>
+            <div class="panel-value text-cyan">GPS en Tiempo Real</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Verificación por coordenadas en cada visita comercial o médica sin margen de error.</p>
           </div>
           <div class="panel-card">
-            <div class="panel-label">Control de Visitas</div>
-            <div class="panel-value" style="color: #34d399;">Reporte en Vivo</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Registro inmediato de actividades sin usar WhatsApp ni archivos sueltos.</p>
+            <div class="panel-label">Supervisión de Rutas</div>
+            <div class="panel-value" style="color: #34d399;">Reporte Inmediato</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Registro centralizado de visitas y pedidos sin depender de chats sueltos.</p>
           </div>
           <div class="panel-card">
-            <div class="panel-label">Cobertura de Rutas</div>
-            <div class="panel-value" style="color: #818cf8;">Rutas en Mapa</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Supervisión directa del avance de metas en tiempo real.</p>
+            <div class="panel-label">Cumplimiento de Metas</div>
+            <div class="panel-value" style="color: #818cf8;">Mapas Dinámicos</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Visualización ejecutiva de la cobertura geográfica por zonas y provincias.</p>
           </div>
         </div>
 
         <!-- Panel 2: Inteligencia Artificial Facturas -->
         <div class="showcase-panel" id="tab-ia">
           <div class="panel-card">
-            <div class="panel-label">Extracción de Datos</div>
-            <div class="panel-value" style="color: #34d399;">OCR + IA</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Lectura de RUC, monto e ítems automáticamente al tomar una foto.</p>
+            <div class="panel-label">Extracción Automática</div>
+            <div class="panel-value" style="color: #34d399;">OCR + IA Vision</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Captura de RUC, subtotal, IVA y detalle al fotografiar o subir una factura física.</p>
           </div>
           <div class="panel-card">
-            <div class="panel-label">Organización masiva</div>
-            <div class="panel-value text-cyan">Lotes de Gastos</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Clasificación instantánea de comprobantes deducibles y no deducibles.</p>
+            <div class="panel-label">Validación Tributaria</div>
+            <div class="panel-value text-cyan">SRI Ecuador Ready</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Organización por lotes de comprobantes deducibles y no deducibles al instante.</p>
           </div>
         </div>
 
@@ -93,13 +92,13 @@
         <div class="showcase-panel" id="tab-dash">
           <div class="panel-card">
             <div class="panel-label">Indicadores KPIs</div>
-            <div class="panel-value" style="color: #818cf8;">Automático</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Consolidado ejecutivo en tiempo real para tomar decisiones con información real.</p>
+            <div class="panel-value" style="color: #818cf8;">Consolidado en Vivo</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Información financiera y operativa unificada para tomar decisiones con certeza.</p>
           </div>
           <div class="panel-card">
-            <div class="panel-label">Permisos de Usuario</div>
-            <div class="panel-value text-cyan">Roles & Accesos</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Seguridad para administradores, supervisores y personal de campo.</p>
+            <div class="panel-label">Control de Accesos</div>
+            <div class="panel-value text-cyan">Seguridad RBAC</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Perfiles diferenciados para directivos, supervisores y ejecutivos en campo.</p>
           </div>
         </div>
       </div>
@@ -107,198 +106,248 @@
   </div>
 </section>
 
-<!-- 2. PROBLEMA OPERATIVO REAL -->
+<!-- 2. PILARES DE SERVICIOS — Soluciones de Software de Alto Nivel -->
 <section class="section-spacing section-alt-bg">
   <div class="container">
     <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
-      <span class="trust-badge" style="margin-bottom: 0.75rem;">Diagnóstico de Operaciones</span>
-      <h2 class="title-section">
-        ¿Tu empresa pierde tiempo y control por operar en <span class="text-gradient">Excel y WhatsApp</span>?
-      </h2>
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Capacidades de Ingeniería</span>
+      <h2 class="title-section">Soluciones de Software que Impulsan tu Negocio</h2>
+      <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.75rem;">
+        Desarrollamos soluciones tecnológicas con arquitecturas modernas, escalables y seguras, diseñadas a la medida exacta de tus requerimientos.
+      </p>
     </div>
 
     <div class="cards-layout-grid" style="margin-top: 1.5rem;">
       <div class="card-box">
         <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Falta de trazabilidad de campo</h3>
-        <p class="body-sm">No sabes con certeza dónde está trabajando tu personal ni si las visitas fueron realizadas en el lugar adecuado.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Desarrollo de Software a Medida</h3>
+        <p class="body-sm" style="margin-bottom: 1rem;">Plataformas web corporativas que centralizan la administración, automatizan flujos operativos y eliminan los errores del ingreso manual.</p>
+        <a href="{{ url('/software-empresarial') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Ver Software Empresarial →</a>
       </div>
 
       <div class="card-box">
         <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
         </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Información dispersa</h3>
-        <p class="body-sm">Los datos clave de tu negocio están fragmentados en conversaciones de WhatsApp, correos e historial no centralizado.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Desarrollo de Aplicaciones Móviles</h3>
+        <p class="body-sm" style="margin-bottom: 1rem;">Apps para iOS y Android con sincronización offline, geolocalización GPS y captura de datos en terreno para personal comercial y técnico.</p>
+        <a href="{{ url('/desarrollo-aplicaciones-moviles') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Ver Apps Móviles →</a>
       </div>
 
       <div class="card-box">
         <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10"/></svg>
         </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Reportes manuales lentos</h3>
-        <p class="body-sm">Tus líderes gastan horas valiosas armando reportes a mano que deberían generarse automáticamente en segundos.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Automatización de Procesos con IA</h3>
+        <p class="body-sm" style="margin-bottom: 1rem;">Lectura óptica de documentos y facturas (OCR con Inteligencia Artificial), procesamiento masivo de datos y sincronización de inventarios.</p>
+        <a href="{{ url('/automatizacion-procesos') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Ver Automatización con IA →</a>
       </div>
 
       <div class="card-box">
         <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
         </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Pérdida de tiempo en documentos</h3>
-        <p class="body-sm">Personal ordenando facturas físicas o rindiendo gastos comprobante por comprobante manualmente.</p>
-      </div>
-
-      <div class="card-box">
-        <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Errores de tipeo e inconsistencias</h3>
-        <p class="body-sm">Ingreso manual de información que provoca duplicaciones, pérdidas de registros e información poco confiable.</p>
-      </div>
-
-      <div class="card-box">
-        <div class="card-icon-svg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Sin software a tu medida</h3>
-        <p class="body-sm">Los programas genéricos del mercado obligan a tu empresa a cambiar su forma de trabajar, en lugar de adaptarse a ti.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Arquitectura e Integración de APIs</h3>
+        <p class="body-sm" style="margin-bottom: 1rem;">Conexión de sistemas con el SRI (facturación electrónica), pasarelas de pago (Kushki, Payphone, Stripe), ERPs y plataformas contables.</p>
+        <a href="{{ url('/desarrollo-software-ecuador') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none;">Ver Integraciones en Ecuador →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 3. EVIDENCIA REAL: CASO ESTRELLA CASSARÁ ECUADOR -->
-<section class="section-spacing" id="cassara-case">
+<!-- 3. INDUSTRIAS Y SECTORES ATENDIDOS -->
+<section class="section-spacing">
+  <div class="container">
+    <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Sectores Productivos</span>
+      <h2 class="title-section">Experiencia en Industrias Clave</h2>
+      <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.75rem;">
+        Entendemos las regulaciones, flujos y desafíos técnicos específicos de diferentes sectores en Ecuador y la región.
+      </p>
+    </div>
+
+    <div class="cards-layout-grid" style="margin-top: 1.5rem;">
+      <div class="card-box">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🏥</div>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Farmacéutica & Salud</h3>
+        <p class="body-sm">Plataformas de supervisión médica, auditoría de visitas en consultorios y farmacias, y control de muestras con trazabilidad por coordenadas GPS.</p>
+      </div>
+
+      <div class="card-box">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🚚</div>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Distribución & Logística</h3>
+        <p class="body-sm">Sistemas de liquidación de rutas, control de pedidos en terreno, gestión de despachos y confirmación de entregas con firma digital.</p>
+      </div>
+
+      <div class="card-box">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">💳</div>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Finanzas & Facturación SRI</h3>
+        <p class="body-sm">Módulos de emisión masiva de comprobantes electrónicos, retenciones, notas de crédito y conciliación bancaria automatizada.</p>
+      </div>
+
+      <div class="card-box">
+        <div style="font-size: 2rem; margin-bottom: 0.75rem;">🏢</div>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Empresas Corporativas & Servicios</h3>
+        <p class="body-sm">Portales de autoservicio para clientes, gestión de contratos, flujos de aprobación interna y reportería ejecutiva consolidada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. CASO DE ÉXITO ESTRELLA: CASSARÁ ECUADOR -->
+<section class="section-spacing section-alt-bg" id="cassara-case">
   <div class="container">
     <div class="case-study-hero-card">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem;">
         <div>
-          <span class="trust-badge" style="margin-bottom: 0.75rem;">Proyecto Real Entregado</span>
+          <span class="trust-badge" style="margin-bottom: 0.75rem;">Caso de Estudio Real</span>
           <h2 class="title-section">Caso de Éxito: <span class="text-gradient">Cassará Ecuador</span></h2>
         </div>
         <a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="btn-action btn-primary-glow">
-          <span>Ver caso de estudio en detalle</span>
+          <span>Ver Caso Completo</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
         </a>
       </div>
 
       <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 820px; margin-bottom: 2rem; line-height: 1.7;">
-        Cassará Ecuador es una plataforma empresarial desarrollada por ConixDev a la medida de la industria farmacéutica para digitalizar y supervisar la operación completa de sus visitadores médicos en terreno.
+        Cassará Ecuador es una plataforma empresarial desarrollada por ConixDev a la medida de la industria farmacéutica para digitalizar y auditar la operación completa de sus visitadores médicos en terreno a nivel nacional.
       </p>
 
       <div class="case-grid-capabilities">
         <div class="capability-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Geolocalización GPS de visitadores</span>
+          <span>Geolocalización GPS en consultorios</span>
         </div>
         <div class="capability-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Registro y auditoría de visitas</span>
+          <span>Auditoría de visitas médicas</span>
         </div>
         <div class="capability-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Gestión de médicos y farmacias</span>
-        </div>
-        <div class="capability-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Escaneo de facturas con IA</span>
-        </div>
-        <div class="capability-pill">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
-          <span>Organización de gastos por lotes</span>
+          <span>Lectura OCR de facturas con IA</span>
         </div>
         <div class="capability-pill">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
           <span>Dashboard de avance de ciclos</span>
         </div>
       </div>
-
-      <div style="background: rgba(6, 182, 212, 0.06); border-left: 4px solid var(--brand-cyan); padding: 1.5rem 1.75rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-style: italic; color: var(--text-main); font-size: 1.05rem;">
-        “Demostramos con hechos que convertimos requerimientos operativos complejos en software empresarial funcional y fácil de usar.”
-      </div>
     </div>
   </div>
 </section>
 
-<!-- 4. CAPACIDADES DESDE LA PERSPECTIVA DEL CLIENTE -->
-<section class="section-spacing section-alt-bg">
+<!-- 5. METODOLOGÍA DE INGENIERÍA — Cómo Trabajamos -->
+<section class="section-spacing">
   <div class="container">
-    <div style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem;">
-      <span class="trust-badge" style="margin-bottom: 0.75rem;">Nuestras Soluciones</span>
-      <h2 class="title-section">¿Qué construimos para tu empresa?</h2>
+    <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Metodología Probada</span>
+      <h2 class="title-section">Nuestro Proceso de Ingeniería</h2>
+      <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.75rem;">
+        Garantizamos entregas predecibles, código de calidad y transparencia en cada etapa de tu proyecto.
+      </p>
     </div>
 
     <div class="cards-layout-grid" style="margin-top: 1.5rem;">
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Aplicaciones Empresariales</h3>
-        <p class="body-sm">Plataformas completas para administrar, supervisar y controlar las operaciones internas de tu negocio desde cualquier navegador.</p>
+        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--brand-cyan-glow); font-weight: 700;">PASO 01</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Diagnóstico & Arquitectura</h3>
+        <p class="body-sm">Analizamos a fondo los flujos operativos de tu empresa, definimos el modelo de datos y seleccionamos la arquitectura tecnológica óptima.</p>
       </div>
 
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Aplicaciones Móviles</h3>
-        <p class="body-sm">Apps para smartphones diseñadas para equipos que trabajan fuera de la oficina o para interacción directa con tus clientes.</p>
+        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--brand-cyan-glow); font-weight: 700;">PASO 02</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Diseño UX/UI & Prototipado</h3>
+        <p class="body-sm">Diseñamos interfaces intuitivas y funcionales para que tu equipo aprenda a utilizar el sistema rápidamente y sin resistencia al cambio.</p>
       </div>
 
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Automatización de Procesos</h3>
-        <p class="body-sm">Convertimos tareas manuales repetitivas en flujos digitales automáticos para ahorrar cientos de horas a tu personal.</p>
+        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--brand-cyan-glow); font-weight: 700;">PASO 03</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Desarrollo Ágil & Clean Code</h3>
+        <p class="body-sm">Programamos con altos estándares de calidad, seguridad y pruebas continuas. Entregamos avances funcionales cada dos semanas.</p>
       </div>
 
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Sistemas de Geolocalización</h3>
-        <p class="body-sm">Verificación GPS y mapas interactivos para confirmar rutas, entregas y visitas en terreno de tu equipo operativo.</p>
-      </div>
-
-      <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Inteligencia y Datos</h3>
-        <p class="body-sm">Dashboards ejecutivos y reportes que consolidan la información crítica de tu empresa para la toma de decisiones.</p>
-      </div>
-
-      <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.75rem;">Integraciones</h3>
-        <p class="body-sm">Conectamos tu nuevo software con las herramientas, bases de datos o pasarelas de pago que tu empresa ya utiliza.</p>
+        <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--brand-cyan-glow); font-weight: 700;">PASO 04</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Despliegue & Código 100% Tuyo</h3>
+        <p class="body-sm">Implementamos en la nube (AWS / DigitalOcean / Cloudflare), capacitamos a tu personal y te entregamos la propiedad total del código fuente.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 5. ORGULLO ECUATORIANO & EQUIPO REAL -->
-<section class="section-spacing">
+<!-- 6. POR QUÉ ELEGIR CONIXDEV (Diferenciadores Clave) -->
+<section class="section-spacing section-alt-bg">
   <div class="container">
-    <div class="ecuador-pride-banner">
-      <span class="trust-badge" style="margin-bottom: 1rem;">Ingeniería de Nivel Internacional</span>
-      <h2 class="title-section" style="max-width: 850px; margin: 0 auto 1.25rem;">
-        Desde <span class="text-gradient">Ecuador</span>, construimos software para empresas que quieren crecer
-      </h2>
-      <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 2rem; line-height: 1.7;">
-        En ConixDev no vendemos plantillas improvisadas. Nos enfocamos en entender a fondo el problema de tu negocio y programar herramientas robustas diseñadas para durar.
-      </p>
+    <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Ventajas Competitivas</span>
+      <h2 class="title-section">Por Qué Empresas Confían en ConixDev</h2>
+    </div>
 
-      <div style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; flex-wrap: wrap; border-top: 1px solid var(--border-subtle); padding-top: 2rem; max-width: 600px; margin: 0 auto;">
-        <div>
-          <strong style="font-size: 1.1rem; color: var(--text-main); display: block;">Nico López // ConixDev</strong>
-          <span style="font-size: 0.88rem; color: var(--text-muted);">Lead Software Engineer & Fundador</span>
-        </div>
-        <div style="display: flex; gap: 0.75rem;">
-          <a href="{{ url('/nosotros') }}" class="btn-action btn-secondary-dark" style="padding: 0.5rem 1rem; font-size: 0.88rem;">
-            Conoce nuestra filosofía →
-          </a>
-        </div>
+    <div class="cards-layout-grid" style="margin-top: 1.5rem;">
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Propiedad Total del Software</h3>
+        <p class="body-sm">No cobramos rentas mensuales por usuario. Tu empresa es la dueña absoluta del código fuente y de la base de datos.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Soporte Local y Directo</h3>
+        <p class="body-sm">Atención directa con ingenieros de software en Ecuador sin tickets lentos ni intermediarios que no entienden tu negocio.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Cumplimiento Legal y SRI</h3>
+        <p class="body-sm">Sistemas preparados para la normativa tributaria ecuatoriana, facturación electrónica y retenciones del SRI.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Escalabilidad y Seguridad</h3>
+        <p class="body-sm">Arquitecturas en la nube preparadas para crecer con tu empresa sin caídas de servidor ni pérdidas de rendimiento.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 6. CONTACTO RIDÍCULAMENTE FÁCIL -->
+<!-- 7. PREGUNTAS FRECUENTES (SEO FAQ) -->
+<section class="section-spacing">
+  <div class="container" style="max-width: 900px;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Respuestas Claras</span>
+      <h2 class="title-section">Preguntas Frecuentes sobre Desarrollo de Software</h2>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+      <div class="card-box">
+        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿Cuánto cuesta desarrollar un software a medida en Ecuador?</h3>
+        <p class="body-sm">En ConixDev, los proyectos de software empresarial y prototipos funcionales inician a partir de <strong>$3,000 USD</strong>. El costo final depende de la cantidad de módulos, usuarios, integraciones con APIs externas y si requiere aplicaciones móviles complementarias.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿Cuánto tiempo toma construir una plataforma empresarial?</h3>
+        <p class="body-sm">Un sistema modular o versión inicial (MVP) suele tomar entre <strong>6 y 10 semanas</strong> de desarrollo. Proyectos corporativos más complejos con múltiples integraciones pueden tomar entre 3 y 5 meses con entregas quincenales funcionales.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿El software desarrollado le pertenece al 100% a mi empresa?</h3>
+        <p class="body-sm">Sí, absolutamente. En ConixDev entregamos el código fuente completo, documentación técnica y accesos a la infraestructura en la nube. Tu empresa no queda atada a pagos mensuales por licencia ni a exclusividad de proveedor.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 style="font-size: 1.15rem; color: var(--text-main); margin-bottom: 0.5rem; font-weight: 700;">¿Cómo se integra el software con la facturación electrónica del SRI?</h3>
+        <p class="body-sm">Construimos servicios de integración directa con los Web Services del SRI para emisión de facturas XML, firma electrónica (.p12), autorización automática y envío de RIDE por correo electrónico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FORMULARIO DE CONTACTO DIRECTO -->
 <section class="section-spacing section-alt-bg" id="contacto-directo">
   <div class="container">
     <div class="contact-simple-card">
       <div style="text-align: center; margin-bottom: 2rem;">
-        <span class="trust-badge" style="margin-bottom: 0.75rem;">Contacto Directo</span>
-        <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con <span class="text-gradient">ConixDev</span></h2>
-        <p style="color: var(--text-muted); font-size: 1.05rem;">Sin intermediarios ni formularios largos. Responderemos a la brevedad.</p>
+        <span class="trust-badge" style="margin-bottom: 0.75rem;">Evaluación de Proyecto</span>
+        <h2 class="title-section" style="margin-bottom: 0.5rem;">Inicia tu Proyecto de Software con <span class="text-gradient">ConixDev</span></h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">Analizamos los requerimientos de tu empresa y te entregamos una propuesta técnica clara.</p>
       </div>
 
       <div id="contactSuccessAlert" style="display: none; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); color: var(--brand-cyan-glow); padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
@@ -313,7 +362,7 @@
 
         <div class="form-field-group">
           <label class="form-label-simple" for="empresa">Nombre de tu empresa *</label>
-          <input type="text" id="empresa" name="empresa" class="form-input-simple" placeholder="Ej. Logística Andina S.A." required />
+          <input type="text" id="empresa" name="empresa" class="form-input-simple" placeholder="Ej. Corporación Andina S.A." required />
         </div>
 
         <div class="form-field-group">
@@ -332,19 +381,19 @@
         </div>
 
         <div class="form-field-group">
-          <label class="form-label-simple" for="proceso_mejorar">Cuéntanos brevemente qué necesitas *</label>
-          <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Queremos controlar las visitas de nuestro personal de campo con geolocalización..." required></textarea>
+          <label class="form-label-simple" for="proceso_mejorar">Cuéntanos brevemente qué necesita tu empresa *</label>
+          <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Necesitamos un sistema web para controlar operaciones, visitas en terreno y sincronizar facturas..." required></textarea>
         </div>
 
         <div style="margin-top: 1.75rem; text-align: center;">
           <button type="submit" class="btn-action btn-primary-glow" style="width: 100%; font-size: 1rem;">
-            Enviar Mensaje a ConixDev
+            Enviar Consulta a ConixDev
           </button>
         </div>
       </form>
 
       <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
-        <a href="https://wa.me/593962761063?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" class="btn-whatsapp-brand">
+        <a href="https://wa.me/593962761063?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto%20de%20desarrollo%20de%20software" target="_blank" class="btn-whatsapp-brand">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.854 0-3.674-.497-5.263-1.442l-.377-.225-3.916 1.027 1.045-3.819-.247-.393c-1.038-1.652-1.587-3.585-1.587-5.566 0-5.74 4.671-10.411 10.413-10.411 2.781 0 5.397 1.082 7.362 3.049 1.964 1.966 3.045 4.582 3.045 7.363 0 5.742-4.671 10.417-10.475 10.417M12.051 0C5.395 0 0 5.393 0 12.05c0 2.128.556 4.204 1.614 6.035L0 24l6.097-1.599c1.764.962 3.753 1.47 5.952 1.47 6.657 0 12.051-5.395 12.051-12.052C24.1 5.393 18.707 0 12.051 0z"/>
           </svg>
