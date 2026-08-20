@@ -35,8 +35,9 @@
 }
 
 /* ==========================================================================
-   High-Contrast Executive Light Theme (Pure White - Zero Grey Tint)
+   High-Contrast Executive Light Theme (Pure White - Zero Grey Tint & Zero Flash)
    ========================================================================== */
+html.light-theme,
 body.light-theme {
   --canvas-dark: #ffffff !important;
   --surface-card: #ffffff !important;
@@ -57,6 +58,13 @@ body.light-theme {
   background-color: #ffffff !important;
   background: #ffffff !important;
   color: #0f172a !important;
+}
+
+html.light-theme .nav-header,
+body.light-theme .nav-header {
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
 body.light-theme html {

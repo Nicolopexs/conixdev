@@ -1,21 +1,33 @@
 /* ==========================================================================
-   CONIXDEV — Interactive Frontend Engine & Theme Switcher
+   CONIXDEV — Interactive Frontend Engine & Instant Anti-Flicker Theme Switcher
    ========================================================================== */
 
+// 0. Immediate theme evaluation on script load (Anti-Flicker Protection)
+(function applyThemeEarly() {
+  try {
+    const savedTheme = localStorage.getItem('conixdev_theme');
+    if (savedTheme === 'light') {
+      document.documentElement.classList.add('light-theme');
+    }
+  } catch (e) {}
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Dark / Light Mode Switcher with localStorage persistence
+  // 1. Dark / Light Mode Switcher with localStorage persistence & Zero FOUC
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   
-  // Check user's saved preference
+  // Sync HTML and Body classes
   const savedTheme = localStorage.getItem('conixdev_theme');
   if (savedTheme === 'light') {
+    document.documentElement.classList.add('light-theme');
     document.body.classList.add('light-theme');
     updateThemeIcon(true);
   }
 
   if (themeToggleBtn) {
     themeToggleBtn.addEventListener('click', () => {
-      const isLight = document.body.classList.toggle('light-theme');
+      const isLight = document.documentElement.classList.toggle('light-theme');
+      document.body.classList.toggle('light-theme', isLight);
       localStorage.setItem('conixdev_theme', isLight ? 'light' : 'dark');
       updateThemeIcon(isLight);
     });
