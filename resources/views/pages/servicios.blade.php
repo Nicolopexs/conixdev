@@ -4,7 +4,7 @@
 @section('description', 'Conoce las soluciones que construimos para empresas: aplicaciones web, móviles, sistemas de geolocalización, inteligencia artificial e integraciones.')
 
 @section('content')
-<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
+<section style="padding-top: 7rem; padding-bottom: 2.5rem;">
   <div class="container">
     <span class="trust-badge">Soluciones para Empresas</span>
     <h1 class="title-hero" style="margin-bottom: 1rem;">
@@ -58,6 +58,7 @@
 
     <!-- Sección Secundaria de Tecnologías para Investigadores -->
     <div style="margin-top: 5rem; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
+    <div class="section-spacing section-alt-bg">
       <h3 style="font-size: 1.1rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">
         Sección Secundaria: Stack de Tecnologías Profesionales
       </h3>

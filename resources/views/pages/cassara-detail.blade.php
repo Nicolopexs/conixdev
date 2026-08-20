@@ -4,7 +4,7 @@
 @section('description', 'Estudio de caso visual de la plataforma empresarial desarrollada a medida por ConixDev para Cassará Ecuador: geolocalización de visitadores y escaneo de facturas con IA.')
 
 @section('content')
-<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
+<section style="padding-top: 7rem; padding-bottom: 2.5rem;">
   <div class="container">
     <div style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
       <a href="{{ url('/') }}" style="color: var(--text-muted); text-decoration: none;">Inicio</a> / 

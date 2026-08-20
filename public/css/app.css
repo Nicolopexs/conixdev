@@ -60,7 +60,7 @@ body.light-theme {
 }
 
 body.light-theme .section-alt-bg {
-  background: #f8fafc;
+  background: #ffffff !important;
   border-top-color: #e2e8f0;
 }
 

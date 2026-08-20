@@ -4,7 +4,7 @@
 @section('description', 'Conoce a ConixDev: empresa tecnológica nacida en Ecuador creando software de nivel internacional para empresas que buscan controlar y escalar sus operaciones.')
 
 @section('content')
-<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
+<section style="padding-top: 7rem; padding-bottom: 2.5rem;">
   <div class="container">
     <span class="trust-badge">Filosofía & Identidad</span>
     <h1 class="title-hero" style="margin-bottom: 1rem;">

@@ -120,7 +120,7 @@
 </section>
 
 <!-- 2. PROBLEMA OPERATIVO REAL -->
-<section class="section-spacing" style="background: rgba(14, 22, 38, 0.4); border-top: 1px solid var(--border-subtle);">
+<section class="section-spacing section-alt-bg">
   <div class="container">
     <div style="text-align: center; max-width: 820px; margin: 0 auto 3rem;">
       <span class="trust-badge">Diagnóstico de Operaciones</span>
@@ -235,7 +235,7 @@
 </section>
 
 <!-- 4. CAPACIDADES DESDE LA PERSPECTIVA DEL CLIENTE -->
-<section class="section-spacing" style="background: rgba(14, 22, 38, 0.4); border-top: 1px solid var(--border-subtle);">
+<section class="section-spacing section-alt-bg">
   <div class="container">
     <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
       <span class="trust-badge">Nuestras Soluciones</span>
@@ -304,7 +304,7 @@
 </section>
 
 <!-- 6. CONTACTO RIDÍCULAMENTE FÁCIL -->
-<section class="section-spacing" id="contacto-directo" style="background: rgba(14, 22, 38, 0.4); border-top: 1px solid var(--border-subtle);">
+<section class="section-spacing section-alt-bg" id="contacto-directo">
   <div class="container">
     <div class="contact-simple-card">
       <div style="text-align: center; margin-bottom: 2rem;">
