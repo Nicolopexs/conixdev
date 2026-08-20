@@ -1087,8 +1087,24 @@ select.form-input-simple option {
   color: var(--text-main);
 }
 
-body.light-theme select.form-input-simple option {
+/* Hero Visual Frame (High-Impact Showcase) */
+.hero-visual-frame {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.hero-visual-frame:hover {
+  transform: translateY(-4px) scale(1.005);
+}
+
+body.light-theme .visual-frame-bar {
   background: #ffffff !important;
+  border-color: #cbd5e1 !important;
   color: #0f172a !important;
 }
+
+body.light-theme .visual-frame-body {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 0 25px rgba(2, 132, 199, 0.15) !important;
+}
+
 

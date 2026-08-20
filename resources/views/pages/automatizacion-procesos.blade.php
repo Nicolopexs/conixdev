@@ -59,6 +59,31 @@
       Eliminamos la digitación manual repetitiva en tu empresa. Automatizamos la lectura de facturas físicas con IA (OCR), procesamiento de documentos y sincronización entre plataformas.
     </p>
 
+    <!-- 🖼️ MOCKUP VISUAL AUTOMATIZACIÓN DE ALTO IMPACTO -->
+    <div class="hero-visual-frame" style="max-width: 880px; margin: 2rem auto 0; position: relative;">
+      <div class="visual-frame-bar" style="background: rgba(14, 22, 38, 0.9); border: 1px solid var(--border-subtle); border-bottom: none; border-radius: var(--radius-md) var(--radius-md) 0 0; padding: 0.75rem 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #ef4444; display: inline-block;"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #f59e0b; display: inline-block;"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="2"/></svg>
+          https://conixdev-ai.sec/ocr-pipeline-automation
+        </div>
+        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--brand-cyan-glow); font-weight: 600;">VISION AI OCR</span>
+      </div>
+
+      <div class="visual-frame-body" style="border: 1px solid var(--border-subtle); border-radius: 0 0 var(--radius-md) var(--radius-md); overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 40px -10px rgba(6, 182, 212, 0.25); position: relative;">
+        <img src="/images/mobile-showcase.jpg" alt="ConixDev Automatización con IA y Lectura OCR" style="width: 100%; height: auto; display: block; object-fit: cover;" />
+        
+        <div style="position: absolute; bottom: 1.25rem; left: 1.25rem; background: rgba(7, 9, 18, 0.85); backdrop-filter: blur(12px); border: 1px solid var(--border-active); border-radius: var(--radius-sm); padding: 0.65rem 1.1rem; display: flex; align-items: center; gap: 0.75rem; color: var(--text-main); font-size: 0.85rem;">
+          <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+          <span style="font-weight: 600;">Motor de Inteligencia Artificial para Facturas y Documentos</span>
+        </div>
+      </div>
+    </div>
+
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
       <a href="#contacto-directo" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
         <span>Solicitar Proyecto de Automatización</span>
