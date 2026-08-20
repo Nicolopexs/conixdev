@@ -4,105 +4,31 @@
 @section('description', 'Desarrollo de software empresarial, aplicaciones móviles y automatización con IA en Ecuador. Creamos sistemas a medida para controlar y escalar tu operación.')
 
 @section('content')
-<!-- 1. HERO PRINCIPAL — Posicionamiento Corporativo & SEO Claro -->
-<section class="section-spacing" style="padding-top: 6.5rem; padding-bottom: 2rem; position: relative;">
-  <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1rem;">
-      <span class="trust-badge-dot"></span>
-      Ingeniería de Software a Medida en Ecuador & LATAM
+<section class="hero-surface">
+  <div class="hero-orbit hero-orbit-one"></div><div class="hero-orbit hero-orbit-two"></div><div class="hero-noise"></div>
+  <div class="container hero-container">
+    <div class="hero-copy">
+      <div class="hero-kicker"><span class="hero-kicker-pulse"></span> Diseñamos sistemas que se mueven con tu negocio</div>
+      <h1 class="hero-title">Tu operación, <span>en una sola vista.</span></h1>
+      <p class="hero-lead">Conectamos personas, procesos y datos para que tu empresa deje de apagar incendios y empiece a operar con claridad.</p>
+      <div class="hero-actions"><a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow"><span>Diseñar mi sistema</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg></a><a href="#cassara-case" class="hero-text-link">Ver cómo lo hacemos <span>↗</span></a></div>
+      <div class="hero-signal-line"><span class="hero-signal-line-dot"></span><span>De la idea al sistema funcionando</span><span class="hero-signal-line-arrow">→</span><span>Web · Móvil · Automatización</span></div>
     </div>
-
-    <h1 class="title-hero" style="max-width: 960px; margin: 0 auto 1.25rem;">
-      Empresa de <span class="text-gradient">Desarrollo de Software</span> a Medida
-    </h1>
-
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2rem; line-height: 1.6;">
-      Construimos plataformas web, aplicaciones móviles y sistemas empresariales personalizados para empresas que necesitan centralizar sus operaciones, automatizar procesos y escalar sin depender de hojas de cálculo ni herramientas genéricas.
-    </p>
-
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
-      <a href="#contacto-directo" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
-        <span>Solicitar Diagnóstico de Software</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
-      </a>
-      <a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="btn-action btn-secondary-dark" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
-        <span>Ver Caso Cassará Ecuador</span>
-      </a>
-    </div>
-
-    <!-- PREVISUALIZACIÓN DE PLATAFORMA EMPRESARIAL REAL -->
-    <div class="hero-software-showcase" style="margin-top: 1.5rem;">
-      <div class="showcase-tab-bar">
-        <div class="showcase-window-dots">
-          <span class="window-dot dot-r"></span>
-          <span class="window-dot dot-y"></span>
-          <span class="window-dot dot-g"></span>
-        </div>
-        <div class="showcase-tab-items">
-          <button class="tab-btn active" data-tab="tab-gps">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Geolocalización & Campo</span>
-          </button>
-          <button class="tab-btn" data-tab="tab-ia">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/><circle cx="12" cy="5" r="2"/></svg>
-            <span>Lectura IA OCR Facturas</span>
-          </button>
-          <button class="tab-btn" data-tab="tab-dash">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            <span>Dashboard Operativo</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="showcase-body">
-        <!-- Panel 1: Geolocalización GPS -->
-        <div class="showcase-panel active" id="tab-gps">
-          <div class="panel-card">
-            <div class="panel-label">Trazabilidad de Terreno</div>
-            <div class="panel-value text-cyan">GPS en Tiempo Real</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Verificación por coordenadas en cada visita comercial o médica sin margen de error.</p>
-          </div>
-          <div class="panel-card">
-            <div class="panel-label">Supervisión de Rutas</div>
-            <div class="panel-value" style="color: #34d399;">Reporte Inmediato</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Registro centralizado de visitas y pedidos sin depender de chats sueltos.</p>
-          </div>
-          <div class="panel-card">
-            <div class="panel-label">Cumplimiento de Metas</div>
-            <div class="panel-value" style="color: #818cf8;">Mapas Dinámicos</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Visualización ejecutiva de la cobertura geográfica por zonas y provincias.</p>
-          </div>
-        </div>
-
-        <!-- Panel 2: Inteligencia Artificial Facturas -->
-        <div class="showcase-panel" id="tab-ia">
-          <div class="panel-card">
-            <div class="panel-label">Extracción Automática</div>
-            <div class="panel-value" style="color: #34d399;">OCR + IA Vision</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Captura de RUC, subtotal, IVA y detalle al fotografiar o subir una factura física.</p>
-          </div>
-          <div class="panel-card">
-            <div class="panel-label">Validación Tributaria</div>
-            <div class="panel-value text-cyan">SRI Ecuador Ready</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Organización por lotes de comprobantes deducibles y no deducibles al instante.</p>
-          </div>
-        </div>
-
-        <!-- Panel 3: Dashboard Ejecutivo -->
-        <div class="showcase-panel" id="tab-dash">
-          <div class="panel-card">
-            <div class="panel-label">Indicadores KPIs</div>
-            <div class="panel-value" style="color: #818cf8;">Consolidado en Vivo</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Información financiera y operativa unificada para tomar decisiones con certeza.</p>
-          </div>
-          <div class="panel-card">
-            <div class="panel-label">Control de Accesos</div>
-            <div class="panel-value text-cyan">Seguridad RBAC</div>
-            <p style="font-size: 0.88rem; color: var(--text-muted);">Perfiles diferenciados para directivos, supervisores y ejecutivos en campo.</p>
-          </div>
+    <div class="hero-command-center" data-mode="campo" data-tilt-card>
+      <div class="command-center-glow"></div>
+      <div class="command-center-topbar"><div class="command-center-brand"><span class="command-center-mark">C</span><span>CONIX / OPERATING LAYER</span></div><div class="command-center-status"><span></span> Sistema conectado</div></div>
+      <div class="command-center-body">
+        <aside class="command-center-sidebar"><div class="sidebar-caption">Módulos activos</div><button class="system-mode-btn active" data-system-mode="campo"><span class="mode-index">01</span><span><strong>Campo</strong><small>GPS · Rutas · Visitas</small></span></button><button class="system-mode-btn" data-system-mode="automatizacion"><span class="mode-index">02</span><span><strong>Automatización</strong><small>Flujos · IA · Integraciones</small></span></button><button class="system-mode-btn" data-system-mode="decisiones"><span class="mode-index">03</span><span><strong>Decisiones</strong><small>Datos · KPIs · Control</small></span></button><div class="sidebar-footer"><span class="sidebar-live-dot"></span> Datos en tiempo real</div></aside>
+        <div class="command-center-main">
+          <div class="command-center-heading"><div><span class="command-center-eyebrow" data-mode-eyebrow>CONTROL DE OPERACIÓN</span><h2 data-mode-title>Todo el campo, bajo control.</h2></div><div class="command-center-time">09:41:28 <span>ECT</span></div></div>
+          <div class="system-panel system-panel-campo"><div class="map-panel"><div class="map-panel-grid"></div><div class="map-route route-one"></div><div class="map-route route-two"></div><div class="map-route route-three"></div><div class="map-zone zone-one"></div><div class="map-zone zone-two"></div><span class="map-pin pin-one"><i></i><b>Quito Norte</b></span><span class="map-pin pin-two"><i></i><b>Cumbayá</b></span><span class="map-pin pin-three"><i></i><b>Valle</b></span><span class="map-pulse pulse-one"></span><span class="map-pulse pulse-two"></span><div class="map-label">COBERTURA ACTIVA <strong>86%</strong></div></div><div class="system-side-metrics"><div class="metric-row"><span>Visitas hoy</span><strong>128 <em>+18%</em></strong></div><div class="metric-row"><span>Personal en campo</span><strong>24 <i></i></strong></div><div class="metric-row"><span>Rutas completadas</span><strong>67%</strong></div><div class="mini-progress"><span></span></div></div></div>
+          <div class="system-panel system-panel-automatizacion"><div class="workflow-panel"><div class="workflow-line"></div><div class="workflow-node node-trigger"><small>ENTRADA</small><strong>Factura recibida</strong><span>Foto / correo / API</span></div><div class="workflow-node node-ai"><small>PROCESAMIENTO</small><strong>IA extrae datos</strong><span>RUC · monto · ítems</span></div><div class="workflow-node node-result"><small>ACCIÓN</small><strong>Gasto clasificado</strong><span>Listo para aprobar</span></div></div><div class="automation-aside"><span class="automation-badge">FLUJO ACTIVO</span><strong>43</strong><span>documentos procesados</span><div class="automation-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+          <div class="system-panel system-panel-decisiones"><div class="decision-chart"><div class="chart-grid"></div><div class="chart-axis"><span>100</span><span>50</span><span>0</span></div><svg viewBox="0 0 480 180" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 145 C45 135 50 120 90 128 S135 100 175 112 S218 90 258 98 S300 48 345 62 S390 35 430 52 S460 22 480 28 V180 H0 Z"/><path class="chart-line" d="M0 145 C45 135 50 120 90 128 S135 100 175 112 S218 90 258 98 S300 48 345 62 S390 35 430 52 S460 22 480 28"/></svg><div class="chart-caption"><span>Rendimiento operativo</span><strong>+32.8%</strong></div></div><div class="decision-kpis"><div><small>Tiempo ahorrado</small><strong>184h</strong><span>este mes</span></div><div><small>Datos confiables</small><strong>99.4%</strong><span>sin reprocesos</span></div></div></div>
+          <div class="command-center-bottom"><span class="bottom-signal"></span><span data-mode-message>Visitadores sincronizados con el panel central</span><span class="bottom-code">LIVE / 03</span></div>
         </div>
       </div>
     </div>
+    <div class="hero-proof-row"><span>Una sola lógica para todo lo que tu empresa necesita resolver</span><div><b>01</b> Procesos <b>02</b> Personas <b>03</b> Información</div></div>
   </div>
 </section>
 
