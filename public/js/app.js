@@ -116,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
           },
           body: JSON.stringify({
             access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
-            subject: `ConixDev Leads | ${empresa || 'Nuevo Cliente'} (${presupuesto})`,
-            from_name: 'ConixDev Leads',
+            subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
+            from_name: 'ConixDev Notificaciones',
             replyto: whatsapp,
-            "Nombre del Cliente": nombre,
-            "Empresa": empresa,
-            "WhatsApp / Correo": whatsapp,
-            "Presupuesto Estimado": presupuesto,
-            "Requerimiento del Proyecto": proceso
+            "👤 Nombre del Contacto": nombre,
+            "🏢 Empresa": empresa,
+            "📱 WhatsApp / Teléfono": whatsapp,
+            "💰 Presupuesto Estimado": presupuesto,
+            "📋 Descripción del Proyecto": proceso
           })
         });
 
