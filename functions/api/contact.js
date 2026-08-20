@@ -89,7 +89,7 @@ export async function onRequestPost(context) {
       ? context.env.RESEND_API_KEY 
       : atob('cmVfTUxoOFB5MlFfRzVEOG5EVDFpVHY1akVreGl6VDRIZGdv');
 
-    // Enviar a la API de Resend
+    // Enviar a la API de Resend (destinatario cuenta autorizada)
     const resendResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
@@ -98,7 +98,7 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         from: 'ConixDev Leads <onboarding@resend.dev>',
-        to: ['nicolopo616@gmail.com', 'info@conixdev.com'],
+        to: ['nicolopo616@gmail.com'],
         subject: `🚀 Nuevo Proyecto ConixDev: ${cleanEmpresa} (${cleanPresupuesto})`,
         html: emailHtml
       })
