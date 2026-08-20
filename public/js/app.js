@@ -107,32 +107,43 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        // Enviar con SDK oficial de EmailJS
+        let sent = false;
+
+        // 1. Intentar envío con EmailJS SDK v4 (Plantilla 100% personalizada en español)
         if (typeof emailjs !== 'undefined') {
-          emailjs.init('OrR_fSm23CEIWNfFE');
-          await emailjs.send('service_ot3xhz4', 'kupll2s', {
-            nombre: nombre,
-            empresa: empresa,
-            whatsapp: whatsapp,
-            presupuesto: presupuesto,
-            proceso: proceso
-          });
-        } else {
-          // Fallback fetch API
-          await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+          try {
+            emailjs.init({ publicKey: 'OrR_fSm23CEIWNfFE' });
+            await emailjs.send('service_ot3xhz4', 'kupll2s', {
+              nombre: nombre,
+              empresa: empresa,
+              whatsapp: whatsapp,
+              presupuesto: presupuesto,
+              proceso: proceso
+            }, { publicKey: 'OrR_fSm23CEIWNfFE' });
+            sent = true;
+          } catch (eJsErr) {
+            console.warn('EmailJS SDK falló, intentando Web3Forms...', eJsErr);
+          }
+        }
+
+        // 2. Respaldo de alta disponibilidad (Web3Forms) si EmailJS no estuviera disponible
+        if (!sent) {
+          await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
             body: JSON.stringify({
-              service_id: 'service_ot3xhz4',
-              template_id: 'kupll2s',
-              user_id: 'OrR_fSm23CEIWNfFE',
-              template_params: {
-                nombre: nombre,
-                empresa: empresa,
-                whatsapp: whatsapp,
-                presupuesto: presupuesto,
-                proceso: proceso
-              }
+              access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
+              subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
+              from_name: 'ConixDev Notificaciones',
+              replyto: whatsapp,
+              "👤 Nombre del Contacto": nombre,
+              "🏢 Empresa": empresa,
+              "📱 WhatsApp / Teléfono": whatsapp,
+              "💰 Presupuesto Estimado": presupuesto,
+              "📋 Descripción del Proyecto": proceso
             })
           });
         }
@@ -145,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         contactForm.reset();
       } catch (err) {
-        console.error('Error enviando con EmailJS:', err);
+        console.error('Error enviando formulario:', err);
         if (contactSuccessAlert) {
           contactSuccessAlert.style.display = 'block';
           contactSuccessAlert.innerHTML = '✔ ¡Mensaje recibido! Nos pondremos en contacto contigo a la brevedad.';
