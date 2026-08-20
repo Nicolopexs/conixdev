@@ -52,8 +52,8 @@
       </form>
 
       <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
-        <a href="https://wa.me/593991234567?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" style="color: var(--brand-cyan-glow); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
-          <span>💬 O si prefieres, escríbenos directamente por WhatsApp</span>
+        <a href="https://wa.me/593962761063?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" style="color: var(--brand-cyan-glow); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <span>💬 O si prefieres, escríbenos directamente por WhatsApp (+593 96 276 1063)</span>
         </a>
       </div>
     </div>
