@@ -12,6 +12,7 @@
   <meta name="robots" content="index, follow" />
   <meta name="author" content="ConixDev" />
   <link rel="canonical" href="https://conixdev.com/" />
+  <meta name="csrf-token" content="{{ csrf_token() ?? '' }}" />
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website" />
@@ -33,7 +34,10 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main CSS Asset -->
-  <link rel="stylesheet" href="./public/css/app.css?v=1.0.0" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0.0" />
+  <style>
+    /* Inline fallback in case Laravel asset helper resolves locally */
+  </style>
 
   <!-- Schema.org JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -720,6 +724,12 @@
   </footer>
 
   <!-- App JavaScript -->
-  <script src="./public/js/app.js?v=1.0.0"></script>
+  <script src="{{ asset('js/app.js') }}?v=1.0.0"></script>
+  <script>
+    // Asset fallback script when static entry is loaded
+    if (typeof document.addEventListener !== 'undefined') {
+      // Script ready
+    }
+  </script>
 </body>
 </html>

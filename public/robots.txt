@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://conixdev.com/sitemap.xml
