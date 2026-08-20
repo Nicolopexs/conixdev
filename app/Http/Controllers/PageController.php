@@ -31,6 +31,16 @@ class PageController extends Controller
         return view('pages.desarrollo-software-ecuador');
     }
 
+    public function desarrolloSoftwareQuito()
+    {
+        return view('pages.desarrollo-de-software-quito-ecuador');
+    }
+
+    public function desarrolloSoftwareGuayaquil()
+    {
+        return view('pages.desarrollo-de-software-guayaquil');
+    }
+
     public function desarrolloAplicacionesMoviles()
     {
         return view('pages.desarrollo-aplicaciones-moviles');

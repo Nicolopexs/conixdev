@@ -163,24 +163,24 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Empresa</h4>
+          <h4 class="footer-col-title">Servicios Principales</h4>
           <ul class="footer-nav-links">
-            <li><a href="{{ url('/') }}">Inicio</a></li>
-            <li><a href="{{ url('/desarrollo-software-ecuador') }}">Software en Ecuador</a></li>
-            <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}">Caso Cassará Ecuador</a></li>
-            <li><a href="{{ url('/blog') }}">Centro de Conocimiento</a></li>
-            <li><a href="{{ url('/nosotros') }}">Sobre ConixDev</a></li>
-            <li><a href="{{ url('/contacto') }}">Contacto Directo</a></li>
+            <li><a href="{{ url('/desarrollo-de-software') }}">Desarrollo de Software</a></li>
+            <li><a href="{{ url('/desarrollo-de-software-a-medida') }}">Desarrollo de Software a Medida</a></li>
+            <li><a href="{{ url('/desarrollo-aplicaciones-moviles') }}">Desarrollo de Apps Móviles</a></li>
+            <li><a href="{{ url('/software-empresarial') }}">Software Empresarial</a></li>
+            <li><a href="{{ url('/automatizacion-procesos') }}">Automatización & IA</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="footer-col-title">Capacidades</h4>
+          <h4 class="footer-col-title">Ubicaciones & SEO</h4>
           <ul class="footer-nav-links">
-            <li><a href="{{ url('/desarrollo-software-ecuador') }}">Desarrollo Software Ecuador</a></li>
-            <li><a href="{{ url('/desarrollo-aplicaciones-moviles') }}">Aplicaciones Móviles</a></li>
-            <li><a href="{{ url('/software-empresarial') }}">Software Empresarial</a></li>
-            <li><a href="{{ url('/automatizacion-procesos') }}">Automatización & IA</a></li>
+            <li><a href="{{ url('/desarrollo-de-software-ecuador') }}">Desarrollo Software Ecuador</a></li>
+            <li><a href="{{ url('/desarrollo-de-software-quito-ecuador') }}">Desarrollo Software Quito</a></li>
+            <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}">Caso Cassará Ecuador</a></li>
+            <li><a href="{{ url('/blog') }}">Centro de Conocimiento</a></li>
+            <li><a href="{{ url('/nosotros') }}">Sobre ConixDev</a></li>
           </ul>
         </div>
 
