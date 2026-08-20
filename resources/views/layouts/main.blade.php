@@ -108,8 +108,7 @@
         <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="nav-item-link">Caso Cassará</a></li>
         <li><a href="{{ url('/servicios') }}" class="nav-item-link">Capacidades</a></li>
         <li><a href="{{ url('/nosotros') }}" class="nav-item-link">Sobre ConixDev</a></li>
-        <li><a href="{{ url('/contacto') }}" class="nav-item-link">Contacto</a></li>
-        <li><a href="{{ url('/contacto') }}" class="btn-action btn-primary-glow" style="padding: 0.55rem 1.25rem;">Hablar con ConixDev</a></li>
+        <li><a href="{{ url('/contacto') }}" class="btn-action btn-primary-glow" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Contacto</a></li>
         <li>
           <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar tema">
             <svg class="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
