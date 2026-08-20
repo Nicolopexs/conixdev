@@ -1,46 +1,42 @@
 @extends('layouts.main')
 
-@section('title', 'Sobre ConixDev | Filosofía de Desarrollo & Creador')
-@section('description', 'Conoce la filosofía de software de ConixDev: soluciones a medida diseñadas exclusivamente alrededor de la operación real de cada empresa.')
+@section('title', 'Sobre ConixDev | Orgullo & Filosofía de Desarrollo')
+@section('description', 'Conoce a ConixDev: empresa tecnológica nacida en Ecuador creando software de nivel internacional para empresas que buscan controlar y escalar sus operaciones.')
 
 @section('content')
-<div class="page-banner">
+<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
   <div class="container">
-    <div class="breadcrumb-nav">
-      <a href="{{ url('/') }}">Inicio</a>
-      <span>/</span>
-      <span style="color: var(--text-primary);">Sobre ConixDev</span>
-    </div>
-    <span class="badge-corp">Filosofía & Desarrollo Senior</span>
-    <h1 class="heading-xl text-gradient-white" style="margin-bottom: 1rem;">
-      Soy el creador de <span class="text-indigo">ConixDev</span>
+    <span class="trust-badge">Filosofía & Identidad</span>
+    <h1 class="title-hero" style="margin-bottom: 1rem;">
+      Sobre <span class="text-gradient">ConixDev</span>
     </h1>
-    <p class="body-lead" style="max-width: 800px;">
-      Desarrollador de soluciones tecnológicas enfocado en analizar problemas operativos complejos y transformarlos en plataformas eficientes.
+    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+      Desde Ecuador, construimos software de nivel internacional para empresas que quieren crecer y controlar mejor sus procesos.
     </p>
   </div>
-</div>
+</section>
 
-<section class="section-padding">
+<section class="section-spacing">
   <div class="container">
-    <div class="wizard-card" style="margin: 0 auto 3rem;">
-      <h2 class="heading-md" style="margin-bottom: 1.25rem;">Mi Enfoque de Trabajo</h2>
-      <p class="body-lead" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
-        Me especializo en convertir ideas y problemas empresariales en aplicaciones funcionales. Mi objetivo es ayudar a las empresas a dejar atrás los procesos manuales y trabajar con herramientas creadas específicamente para su realidad.
+    <div class="contact-simple-card" style="max-width: 860px; margin-bottom: 3rem;">
+      <h2 class="title-section" style="font-size: 1.8rem; margin-bottom: 1.25rem;">Nuestra Forma de Trabajar</h2>
+      <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
+        No pretendemos ser una agencia masiva que revende plantillas. Somos un equipo de ingeniería extremadamente competente que analiza la realidad de tu empresa y programa el sistema exacto que tu negocio necesita.
       </p>
 
-      <p style="font-size: 0.95rem; color: var(--brand-indigo-light); font-weight: 600; margin-bottom: 2rem;">
-        📍 Opero desde Ecuador atendiendo proyectos para empresas nacionales e internacionales.
+      <p style="font-size: 1rem; color: var(--brand-cyan-glow); font-weight: 600; margin-bottom: 2rem;">
+        🇪🇨 Operamos desde Ecuador atendiendo proyectos para empresas nacionales e internacionales.
       </p>
 
-      <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
         <div>
-          <strong style="font-size: 1.1rem; color: var(--text-primary); display: block;">Nico López // ConixDev</strong>
-          <span style="color: var(--text-secondary); font-size: 0.9rem;">Desarrollador Senior de Software Empresarial</span>
+          <strong style="font-size: 1.1rem; color: var(--text-main); display: block;">Nico López // ConixDev</strong>
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Lead Software Engineer & Fundador</span>
         </div>
-        <div style="display: flex; gap: 1rem;">
-          <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">LinkedIn Profile</a>
-          <a href="https://github.com/Nicolopexs" target="_blank" class="btn btn-secondary">GitHub Repos</a>
+        <div>
+          <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow">
+            Hablar de mi proyecto →
+          </a>
         </div>
       </div>
     </div>

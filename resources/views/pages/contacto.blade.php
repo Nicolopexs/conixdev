@@ -1,61 +1,59 @@
 @extends('layouts.main')
 
-@section('title', 'Contacto | ConixDev Software Empresarial')
-@section('description', 'Ponte en contacto directo con ConixDev para desarrollo de software a medida, aplicaciones empresariales y consultas técnicas.')
+@section('title', 'Contacto | ConixDev')
+@section('description', 'Contactar a ConixDev es ridículamente fácil. Cuéntanos tu proyecto y nos pondremos en contacto contigo a la brevedad.')
 
 @section('content')
-<div class="page-banner">
-  <div class="container">
-    <div class="breadcrumb-nav">
-      <a href="{{ url('/') }}">Inicio</a>
-      <span>/</span>
-      <span style="color: var(--text-primary);">Contacto</span>
-    </div>
-    <span class="badge-corp">Comunicación Directa</span>
-    <h1 class="heading-xl text-gradient-white" style="margin-bottom: 1rem;">
-      Contacto <span class="text-indigo">ConixDev</span>
+<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
+  <div class="container text-center">
+    <span class="trust-badge">Contacto Directo</span>
+    <h1 class="title-hero" style="margin-bottom: 1rem;">
+      Hablar con <span class="text-gradient">ConixDev</span>
     </h1>
-    <p class="body-lead" style="max-width: 800px;">
-      Trato directo con el desarrollador senior responsable de tu proyecto, sin intermediarios.
+    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+      Sin intermediarios ni formularios de 15 preguntas. Cuéntanos qué necesitas y responderemos a la brevedad.
     </p>
   </div>
-</div>
+</section>
 
-<section class="section-padding">
+<section class="section-spacing">
   <div class="container">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-      <div class="b2b-card" style="padding: 2.5rem;">
-        <span class="card-tag">Atención Rápida</span>
-        <h2 class="heading-md" style="margin-bottom: 1rem;">Canales de Contacto Directo</h2>
-        
-        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1.5rem;">
-          <a href="https://wa.me/593991234567?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto" target="_blank" class="btn btn-secondary" style="justify-content: flex-start;">
-            <span>💬 Chat Directo por WhatsApp (+593)</span>
-          </a>
-
-          <a href="mailto:contacto@conixdev.com" class="btn btn-secondary" style="justify-content: flex-start;">
-            <span>✉️ contacto@conixdev.com</span>
-          </a>
-
-          <a href="https://linkedin.com" target="_blank" class="btn btn-secondary" style="justify-content: flex-start;">
-            <span>🔗 Perfil Profesional en LinkedIn</span>
-          </a>
-
-          <a href="https://github.com/Nicolopexs" target="_blank" class="btn btn-secondary" style="justify-content: flex-start;">
-            <span>💻 Repositorios GitHub</span>
-          </a>
-        </div>
+    <div class="contact-simple-card">
+      <div id="contactSuccessAlert" style="display: none; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); color: var(--brand-cyan-glow); padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
+        ✔ ¡Mensaje recibido! Nos pondremos en contacto contigo a la brevedad.
       </div>
 
-      <div class="b2b-card" style="padding: 2.5rem;">
-        <span class="card-tag">¿Buscas un presupuesto?</span>
-        <h2 class="heading-md" style="margin-bottom: 1rem;">Solicitud de Proyecto</h2>
-        <p class="body-sm" style="margin-bottom: 2rem;">
-          Si ya tienes identificados los requerimientos o el proceso que deseas digitalizar en tu empresa, te recomendamos usar nuestro portal de diagnóstico para evaluar la viabilidad y presupuesto.
-        </p>
+      <form id="conixdevContactForm">
+        <div class="form-field-group">
+          <label class="form-label-simple" for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" class="form-input-simple" placeholder="Ej. Carlos Mendoza" required />
+        </div>
 
-        <a href="{{ url('/diagnostico') }}" class="btn btn-primary" style="width: 100%;">
-          Ir al Formulario de Diagnóstico →
+        <div class="form-field-group">
+          <label class="form-label-simple" for="empresa">Nombre de tu empresa *</label>
+          <input type="text" id="empresa" name="empresa" class="form-input-simple" placeholder="Ej. Logística Andina S.A." required />
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-label-simple" for="whatsapp">WhatsApp o Correo de contacto *</label>
+          <input type="text" id="whatsapp" name="whatsapp" class="form-input-simple" placeholder="Ej. +593 99 123 4567 o correo@empresa.com" required />
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-label-simple" for="proceso_mejorar">Cuéntanos brevemente qué necesitas o deseas mejorar *</label>
+          <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Queremos controlar las visitas de nuestro personal de campo con geolocalización..." required></textarea>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <button type="submit" class="btn-action btn-primary-glow" style="width: 100%; font-size: 1rem;">
+            Enviar Mensaje a ConixDev
+          </button>
+        </div>
+      </form>
+
+      <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        <a href="https://wa.me/593991234567?text=Hola%20ConixDev,%20quisiera%20consultar%20sobre%20un%20proyecto%20de%20software" target="_blank" style="color: var(--brand-cyan-glow); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <span>💬 O si prefieres, escríbenos directamente por WhatsApp</span>
         </a>
       </div>
     </div>

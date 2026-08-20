@@ -5,20 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- SEO Primary Meta Tags -->
-  <title>@yield('title', 'ConixDev | Desarrollo de Software Empresarial a Medida')</title>
-  <meta name="title" content="@yield('title', 'ConixDev | Desarrollo de Software Empresarial a Medida')" />
-  <meta name="description" content="@yield('description', 'Desarrollo aplicaciones empresariales, sistemas de geolocalización, dashboards y automatizaciones con IA adaptadas a las necesidades reales de cada empresa.')" />
-  <meta name="keywords" content="desarrollo de software a medida, desarrollo de aplicaciones empresariales, aplicaciones empresariales personalizadas, software para controlar visitas médicas, software para fuerza de ventas, software de geolocalización empresarial, desarrollo de aplicaciones en Ecuador, automatización empresarial con inteligencia artificial, sistemas empresariales personalizados, desarrollo de aplicaciones web y móviles" />
+  <title>@yield('title', 'ConixDev — Desarrollamos el software que tu empresa necesita')</title>
+  <meta name="title" content="@yield('title', 'ConixDev — Desarrollamos el software que tu empresa necesita')" />
+  <meta name="description" content="@yield('description', 'Desarrollo de aplicaciones empresariales a medida, sistemas de geolocalización, automatización de procesos y plataformas operativas en Ecuador y Latinoamérica.')" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="ConixDev" />
   <link rel="canonical" href="https://conixdev.com{{ Request::getPathInfo() }}" />
   <meta name="csrf-token" content="{{ csrf_token() ?? '' }}" />
 
-  <!-- Open Graph / Facebook / LinkedIn -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://conixdev.com{{ Request::getPathInfo() }}" />
-  <meta property="og:title" content="@yield('title', 'ConixDev | Desarrollo de Software Empresarial a Medida')" />
-  <meta property="og:description" content="@yield('description', 'Transformo procesos manuales, Excel y WhatsApp en aplicaciones empresariales diseñadas para la operación real de cada empresa.')" />
+  <meta property="og:title" content="@yield('title', 'ConixDev — Desarrollamos el software que tu empresa necesita')" />
+  <meta property="og:description" content="@yield('description', 'Desarrollo de aplicaciones empresariales a medida, sistemas de geolocalización y automatización de procesos.')" />
   <meta property="og:image" content="https://conixdev.com/images/og-conixdev.jpg" />
 
   <!-- Google Fonts -->
@@ -27,9 +26,9 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=2.0.0" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=3.0.0" />
 
-  <!-- Schema.org JSON-LD Structured Data -->
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,100 +42,120 @@
       "addressCountry": "EC"
     },
     "sameAs": [
-      "https://linkedin.com",
       "https://github.com/Nicolopexs"
     ]
   }
   </script>
 </head>
 <body>
-  <div class="bg-grid-overlay"></div>
+  <div class="canvas-grid"></div>
 
-  <!-- Header Multi-Page Navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="{{ url('/') }}" class="brand-logo">
-        CONIX<span>DEV</span>
-        <span class="brand-tag">v2.0</span>
+  <!-- Header Navigation Bar -->
+  <header class="nav-header">
+    <div class="container nav-container">
+      <a href="{{ url('/') }}" class="brand-wrapper">
+        <!-- Official ConixDev Pixelated C Logo SVG -->
+        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0284c7" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+
+          <!-- Stylized C body -->
+          <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
+          
+          <!-- Geometric Pixel Cubes dissolving top right -->
+          <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
+          <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
+          <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
+          <rect x="84" y="27" width="9" height="9" fill="#06b6d4" rx="2" />
+          <rect x="78" y="38" width="9" height="9" fill="#38bdf8" rx="2" />
+        </svg>
+
+        <span class="brand-text">Conix<span>Dev</span></span>
       </a>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="{{ url('/') }}" class="nav-link">Inicio</a></li>
-        <li><a href="{{ url('/servicios') }}" class="nav-link">Servicios</a></li>
-        <li><a href="{{ url('/casos-de-exito') }}" class="nav-link">Casos de Éxito</a></li>
-        <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="nav-link">Cassará Ecuador</a></li>
-        <li><a href="{{ url('/nosotros') }}" class="nav-link">Sobre ConixDev</a></li>
-        <li><a href="{{ url('/contacto') }}" class="nav-link">Contacto</a></li>
-        <li><a href="{{ url('/diagnostico') }}" class="btn btn-primary" style="padding: 0.5rem 1.15rem;">Diagnóstico CTA</a></li>
+      <ul class="nav-links-wrap" id="navLinksWrap">
+        <li><a href="{{ url('/') }}" class="nav-item-link">Inicio</a></li>
+        <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="nav-item-link">Caso Cassará</a></li>
+        <li><a href="{{ url('/servicios') }}" class="nav-item-link">Capacidades</a></li>
+        <li><a href="{{ url('/nosotros') }}" class="nav-item-link">Sobre ConixDev</a></li>
+        <li><a href="{{ url('/contacto') }}" class="nav-item-link">Contacto</a></li>
+        <li><a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow" style="padding: 0.55rem 1.25rem;">Hablar con ConixDev</a></li>
       </ul>
 
-      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menú">
+      <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Abrir menú">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </div>
   </header>
 
-  <!-- Main View Content -->
-  <main>
+  <!-- Main View Slot -->
+  <main style="flex: 1;">
     @yield('content')
   </main>
 
-  <!-- Corporate Footer with Sitemap -->
-  <footer class="site-footer">
+  <!-- Corporate Footer -->
+  <footer class="footer-corporate">
     <div class="container">
-      <div class="footer-sitemap">
-        <div class="footer-col">
-          <a href="{{ url('/') }}" class="brand-logo" style="margin-bottom: 1rem;">
-            CONIX<span>DEV</span>
+      <div class="footer-nav-grid">
+        <div>
+          <a href="{{ url('/') }}" class="brand-wrapper" style="margin-bottom: 1.25rem;">
+            <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
+              <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
+              <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
+              <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
+              <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
+            </svg>
+            <span class="brand-text">Conix<span>Dev</span></span>
           </a>
-          <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
-            Transformo procesos manuales, Excel y WhatsApp en aplicaciones empresariales diseñadas para la operación real de cada empresa.
+          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
+            Desarrollamos el software que tu empresa necesita. Transformamos operaciones manuales en sistemas de alto rendimiento.
           </p>
-          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--brand-indigo-light); font-weight: 600;">
-            📍 Ecuador // Atención Global
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--brand-cyan-glow); font-weight: 600;">
+            🇪🇨 Desde Ecuador, construyendo software de nivel internacional.
           </p>
         </div>
 
-        <div class="footer-col">
-          <h4>Navegación</h4>
-          <ul class="footer-links">
+        <div>
+          <h4 class="footer-col-title">Empresa</h4>
+          <ul class="footer-nav-links">
             <li><a href="{{ url('/') }}">Inicio</a></li>
-            <li><a href="{{ url('/servicios') }}">Servicios Empresariales</a></li>
-            <li><a href="{{ url('/casos-de-exito') }}">Centro de Casos de Éxito</a></li>
             <li><a href="{{ url('/casos-de-exito/cassara-ecuador') }}">Caso Cassará Ecuador</a></li>
             <li><a href="{{ url('/nosotros') }}">Sobre ConixDev</a></li>
+            <li><a href="{{ url('/contacto') }}">Contacto Directo</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Soluciones</h4>
-          <ul class="footer-links">
-            <li><a href="{{ url('/servicios') }}">Control de Visitas Médicas</a></li>
-            <li><a href="{{ url('/servicios') }}">Geolocalización de Vendedores</a></li>
-            <li><a href="{{ url('/servicios') }}">Inteligencia Artificial para Facturas</a></li>
-            <li><a href="{{ url('/servicios') }}">Dashboards e Indicadores KPIs</a></li>
-            <li><a href="{{ url('/servicios') }}">Apps Móviles de Campo</a></li>
+        <div>
+          <h4 class="footer-col-title">Capacidades</h4>
+          <ul class="footer-nav-links">
+            <li><a href="{{ url('/servicios') }}">Aplicaciones Empresariales</a></li>
+            <li><a href="{{ url('/servicios') }}">Aplicaciones Móviles</a></li>
+            <li><a href="{{ url('/servicios') }}">Sistemas de Geolocalización</a></li>
+            <li><a href="{{ url('/servicios') }}">Inteligencia Artificial & Facturación</a></li>
           </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Diagnóstico</h4>
-          <ul class="footer-links">
-            <li><a href="{{ url('/diagnostico') }}">Solicitar Diagnóstico</a></li>
-            <li><a href="{{ url('/contacto') }}">Página de Contacto</a></li>
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul class="footer-nav-links">
+            <li><a href="{{ url('/diagnostico') }}">Solicitar Propuesta</a></li>
             <li><a href="https://wa.me/593991234567" target="_blank">WhatsApp Directo</a></li>
             <li><a href="https://github.com/Nicolopexs" target="_blank">GitHub Developer</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
+      <div class="footer-bottom-bar">
         <p>© 2026 ConixDev. Todos los derechos reservados. | conixdev.com</p>
-        <p>Desarrollo de Software Empresarial a Medida</p>
+        <p>Software Empresarial Hecho a Medida</p>
       </div>
     </div>
   </footer>
 
-  <script src="{{ asset('js/app.js') }}?v=2.0.0"></script>
+  <script src="{{ asset('js/app.js') }}?v=3.0.0"></script>
 </body>
 </html>

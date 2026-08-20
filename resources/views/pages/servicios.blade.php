@@ -1,104 +1,76 @@
 @extends('layouts.main')
 
-@section('title', 'Servicios Empresariales de Software | ConixDev')
-@section('description', 'Desarrollo aplicaciones web, móviles, sistemas de geolocalización, inteligencia artificial para facturas y dashboards a medida.')
+@section('title', 'Nuestras Capacidades de Software | ConixDev')
+@section('description', 'Conoce las soluciones que construimos para empresas: aplicaciones web, móviles, sistemas de geolocalización, inteligencia artificial e integraciones.')
 
 @section('content')
-<div class="page-banner">
+<section style="padding-top: 8.5rem; padding-bottom: 3.5rem; background: linear-gradient(180deg, rgba(14, 22, 38, 0.8) 0%, rgba(7, 9, 18, 0) 100%);">
   <div class="container">
-    <div class="breadcrumb-nav">
-      <a href="{{ url('/') }}">Inicio</a>
-      <span>/</span>
-      <span style="color: var(--text-primary);">Servicios Empresariales</span>
-    </div>
-    <span class="badge-corp">Capacidades Técnicas B2B</span>
-    <h1 class="heading-xl text-gradient-white" style="margin-bottom: 1rem;">
-      ¿Qué puedo desarrollar para <span class="text-indigo">tu empresa</span>?
+    <span class="trust-badge">Soluciones para Empresas</span>
+    <h1 class="title-hero" style="margin-bottom: 1rem;">
+      ¿Qué desarrollamos para <span class="text-gradient">tu empresa</span>?
     </h1>
-    <p class="body-lead" style="max-width: 800px;">
-      Soluciones de software diseñadas alrededor de la operación real de tu negocio, enfocadas en eliminar cuellos de botella y automatizar procesos.
+    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+      Organizamos nuestras capacidades alrededor de los problemas operativos de tu negocio, no mediante listas aburridas de código.
     </p>
   </div>
-</div>
+</section>
 
-<section class="section-padding">
+<section class="section-spacing">
   <div class="container">
-    <div class="b2b-grid">
-      <div class="b2b-card">
-        <span class="card-tag">Desarrollo Web</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Aplicaciones Web Empresariales</h3>
-        <p class="body-sm">Plataformas centralizadas accesibles desde cualquier navegador para gestionar clientes, inventarios o flujos de trabajo con permisos avanzados.</p>
+    <div class="cards-layout-grid">
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">01 / OPERACIONES CENTRALIZADAS</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Aplicaciones Empresariales</h3>
+        <p class="body-sm">Sistemas completos accesibles desde cualquier navegador para administrar, controlar y auditar las actividades de tu empresa.</p>
       </div>
 
-      <div class="b2b-card">
-        <span class="card-tag">Móvil iOS & Android</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Aplicaciones Móviles</h3>
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">02 / EQUIPOS Y CLIENTES</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Aplicaciones Móviles</h3>
         <p class="body-sm">Apps intuitivas diseñadas para que tus empleados en terreno o tus clientes interactúen desde cualquier lugar sin depender de una computadora.</p>
       </div>
 
-      <div class="b2b-card">
-        <span class="card-tag">Sistemas ERP / CRM</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Sistemas de Gestión Personalizados</h3>
-        <p class="body-sm">Software adaptado 100% a la lógica de tu negocio, reemplazando plantillas rígidas por herramientas creadas específicamente a tu medida.</p>
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">03 / EFICIENCIA OPERATIVA</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Automatización de Procesos</h3>
+        <p class="body-sm">Convertimos tareas manuales repetitivas en flujos digitales automáticos para ahorrar cientos de horas a tu personal.</p>
       </div>
 
-      <div class="b2b-card">
-        <span class="card-tag">Operaciones Terreno</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Plataformas para Equipos de Campo</h3>
-        <p class="card-desc">Herramientas especializadas para coordinar técnicos, vendedores o personal operativo que trabaja fuera de la oficina.</p>
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">04 / SOFTWARE A TU MEDIDA</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Plataformas Personalizadas</h3>
+        <p class="body-sm">Software diseñado específicamente para las necesidades únicas de tu negocio, sin las limitaciones de plantillas genéricas.</p>
       </div>
 
-      <div class="b2b-card">
-        <span class="card-tag">GPS & Trazabilidad</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Sistemas de Geolocalización</h3>
-        <p class="body-sm">Rastreo inteligente y verificación geográfica para confirmar visitas, entregas y rutas de tu personal en tiempo real.</p>
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">05 / TOMA DE DECISIONES</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Inteligencia y Datos</h3>
+        <p class="body-sm">Dashboards ejecutivos y reportes en tiempo real que consolidan la información crítica de tu empresa.</p>
       </div>
 
-      <div class="b2b-card">
-        <span class="card-tag">Business Intelligence</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Dashboards y Reportes Executivos</h3>
-        <p class="body-sm">Paneles visuales e indicadores ejecutivos (KPIs) actualizados automáticamente para tomar decisiones con información real.</p>
-      </div>
-
-      <div class="b2b-card">
-        <span class="card-tag">Eficiencia Operativa</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Automatización de Procesos</h3>
-        <p class="body-sm">Eliminación de tareas repetitivas conectando sistemas, notificaciones automáticas y aprobaciones sin intervención manual.</p>
-      </div>
-
-      <div class="b2b-card">
-        <span class="card-tag">Inteligencia Artificial</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Procesamiento de Documentos con IA</h3>
-        <p class="body-sm">Lectura inteligente y extracción automática de datos en facturas, recibos y formularios mediante IA y OCR de alta precisión.</p>
-      </div>
-
-      <div class="b2b-card">
-        <span class="card-tag">Fuerza Comercial</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Control de Ventas y Visitas</h3>
-        <p class="body-sm">Seguimiento detallado de metas comerciales, pedidos en terreno y la actividad diaria de tus asesores de ventas.</p>
-      </div>
-
-      <div class="b2b-card">
-        <span class="card-tag">Conectividad API</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Integraciones de Servicios</h3>
-        <p class="body-sm">Conexión de tu nuevo software con bases de datos existentes, pasarelas de pago, facturación electrónica o servicios de terceros.</p>
-      </div>
-
-      <div class="b2b-card">
-        <span class="card-tag">Soporte Continuo</span>
-        <h3 class="heading-md" style="font-size: 1.25rem; margin-bottom: 0.75rem;">Mantenimiento y Evolución</h3>
-        <p class="body-sm">Soporte técnico, optimización de velocidad y desarrollo continuo de nuevas funciones para sistemas ya construidos.</p>
+      <div class="card-box">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">06 / CONECTIVIDAD</span>
+        <h3 class="title-card" style="margin: 0.5rem 0;">Integraciones de Herramientas</h3>
+        <p class="body-sm">Conectamos el nuevo software con las herramientas, bases de datos o facturación que tu empresa ya utiliza.</p>
       </div>
     </div>
 
-    <div style="margin-top: 4rem; text-align: center; background: var(--bg-surface); padding: 3rem 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
-      <h3 class="heading-md" style="margin-bottom: 1rem;">¿Tienes un requerimiento especial para tu empresa?</h3>
-      <p class="body-lead" style="max-width: 650px; margin: 0 auto 2rem; font-size: 1.05rem;">
-        Explícame cómo funciona tu operación actual y te propondré la arquitectura de software más eficiente.
+    <!-- Sección Secundaria de Tecnologías para Investigadores -->
+    <div style="margin-top: 5rem; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
+      <h3 style="font-size: 1.1rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">
+        Sección Secundaria: Stack de Tecnologías Profesionales
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 1.5rem;">
+        Construimos con tecnologías modernas y herramientas profesionales de código limpio:
       </p>
-      <a href="{{ url('/diagnostico') }}" class="btn btn-primary">
-        Solicitar Diagnóstico Sin Compromiso
-      </a>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;">
+        <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">Laravel 11</span>
+        <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">PHP 8.3</span>
+        <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">PostgreSQL / MySQL</span>
+        <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">REST APIs</span>
+        <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">OCR & Vision AI</span>
+      </div>
     </div>
   </div>
 </section>
