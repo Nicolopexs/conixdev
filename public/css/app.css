@@ -34,7 +34,7 @@
 }
 
 /* ==========================================================================
-   Light Theme Tokens
+   High-Contrast Executive Light Theme Tokens (Stripe / Vercel Grade)
    ========================================================================== */
 body.light-theme {
   --canvas-dark: #f8fafc;
@@ -42,40 +42,199 @@ body.light-theme {
   --surface-elevated: #f1f5f9;
   --surface-hover: #e2e8f0;
 
-  --border-subtle: rgba(0, 0, 0, 0.09);
-  --border-active: rgba(2, 132, 199, 0.4);
+  --border-subtle: #cbd5e1;
+  --border-active: #0284c7;
 
   --text-main: #0f172a;
-  --text-muted: #475569;
-  --text-dark: #94a3b8;
+  --text-muted: #334155;
+  --text-dark: #64748b;
+
+  --brand-cyan-glow: #0284c7;
+  --brand-gradient: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+}
+
+body.light-theme .text-gradient {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .trust-badge {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.3);
+  color: #0369a1;
+  font-weight: 700;
+}
+
+body.light-theme .trust-badge-dot {
+  background: #0284c7;
+  box-shadow: 0 0 8px rgba(2, 132, 199, 0.5);
 }
 
 body.light-theme .nav-header {
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom-color: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #cbd5e1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 body.light-theme .brand-wrapper {
   color: #0f172a;
 }
 
+body.light-theme .nav-item-link {
+  color: #334155;
+  font-weight: 600;
+}
+
+body.light-theme .nav-item-link:hover, 
+body.light-theme .nav-item-link.active {
+  color: #0284c7;
+}
+
 body.light-theme .canvas-grid {
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+body.light-theme .card-box {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+body.light-theme .card-box:hover {
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(2, 132, 199, 0.12);
+}
+
+body.light-theme .hero-software-showcase {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .showcase-tab-bar {
+  background: #f1f5f9;
+  border-bottom-color: #cbd5e1;
+}
+
+body.light-theme .tab-btn {
+  color: #334155;
+  font-weight: 600;
+}
+
+body.light-theme .tab-btn.active, 
+body.light-theme .tab-btn:hover {
+  background: #ffffff;
+  color: #0284c7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .panel-card {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+body.light-theme .panel-label {
+  color: #475569;
+  font-weight: 700;
+}
+
+body.light-theme .panel-value {
+  color: #0f172a;
+}
+
+body.light-theme .panel-value.text-cyan {
+  color: #0284c7;
+}
+
+body.light-theme .contact-simple-card {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .form-label-simple {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+body.light-theme .form-input-simple {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+body.light-theme .form-input-simple:focus {
+  border-color: #0284c7;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+body.light-theme .case-study-hero-card {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .capability-pill {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+body.light-theme .capability-pill svg {
+  color: #0284c7;
+}
+
+body.light-theme .screenshot-card {
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+body.light-theme .screenshot-title {
+  color: #0f172a;
+}
+
+body.light-theme .screenshot-desc {
+  color: #334155;
+}
+
+body.light-theme .ecuador-pride-banner {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.06), rgba(29, 78, 216, 0.04));
+  border-color: rgba(2, 132, 199, 0.25);
 }
 
 body.light-theme .footer-corporate {
   background: #f1f5f9;
-  border-top-color: rgba(0,0,0,0.08);
+  border-top-color: #cbd5e1;
 }
 
-body.light-theme .showcase-tab-bar {
-  background: rgba(241, 245, 249, 0.95);
+body.light-theme .footer-col-title {
+  color: #0f172a;
 }
 
-body.light-theme .panel-card {
-  background: rgba(255, 255, 255, 0.9);
+body.light-theme .footer-nav-links a {
+  color: #334155;
+}
+
+body.light-theme .footer-nav-links a:hover {
+  color: #0284c7;
+}
+
+body.light-theme .footer-bottom-bar {
+  border-top-color: #cbd5e1;
+  color: #64748b;
+}
+
+body.light-theme .theme-toggle-btn {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #0f172a;
 }
 
 /* Global Reset */
@@ -102,7 +261,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--canvas-dark);
   color: var(--text-main);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* Background Canvas Effects */
@@ -656,10 +815,6 @@ h1, h2, h3, h4 {
   margin-top: 2.5rem;
 }
 
-body.light-theme .case-study-hero-card {
-  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
-}
-
 .case-grid-capabilities {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -677,10 +832,6 @@ body.light-theme .case-study-hero-card {
   gap: 0.75rem;
   font-size: 0.92rem;
   font-weight: 600;
-}
-
-body.light-theme .capability-pill {
-  background: #ffffff;
 }
 
 .capability-pill svg {
@@ -733,10 +884,6 @@ body.light-theme .capability-pill {
   font-family: var(--font-main);
   font-size: 0.95rem;
   transition: var(--transition);
-}
-
-body.light-theme .form-input-simple {
-  background: #f8fafc;
 }
 
 .form-input-simple:focus {
