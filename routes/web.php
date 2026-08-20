@@ -12,7 +12,10 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 
-// Servicos Generales & Verticaes Dedicadas
+// Servicios Generales & Verticales Dedicadas (Exact-Match SEO URLs)
+Route::get('/desarrollo-de-software', [PageController::class, 'desarrolloDeSoftware'])->name('servicios.desarrollo-de-software');
+Route::get('/desarrollo-de-software-a-medida', [PageController::class, 'desarrolloDeSoftwareAMedida'])->name('servicios.desarrollo-de-software-a-medida');
+Route::get('/desarrollo-de-aplicaciones-moviles', [PageController::class, 'desarrolloAplicacionesMoviles'])->name('servicios.desarrollo-de-apps-moviles');
 Route::get('/servicios', [PageController::class, 'servicios'])->name('servicios');
 Route::get('/desarrollo-software-ecuador', [PageController::class, 'desarrolloSoftwareEcuador'])->name('servicios.software-ecuador');
 Route::get('/desarrollo-aplicaciones-moviles', [PageController::class, 'desarrolloAplicacionesMoviles'])->name('servicios.apps-moviles');

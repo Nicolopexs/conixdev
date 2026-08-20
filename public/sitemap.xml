@@ -8,7 +8,19 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Páginas de Servicio Principales (SEO & GEO Ecuador / Quito) -->
+  <!-- Páginas de Servicio Principales (SEO Exact-Match & GEO Ecuador) -->
+  <url>
+    <loc>https://conixdev.com/desarrollo-de-software</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://conixdev.com/desarrollo-de-software-a-medida</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
   <url>
     <loc>https://conixdev.com/desarrollo-software-ecuador</loc>
     <lastmod>2026-08-20</lastmod>
