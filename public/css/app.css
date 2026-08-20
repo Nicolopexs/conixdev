@@ -33,6 +33,51 @@
   --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ==========================================================================
+   Light Theme Tokens
+   ========================================================================== */
+body.light-theme {
+  --canvas-dark: #f8fafc;
+  --surface-card: #ffffff;
+  --surface-elevated: #f1f5f9;
+  --surface-hover: #e2e8f0;
+
+  --border-subtle: rgba(0, 0, 0, 0.09);
+  --border-active: rgba(2, 132, 199, 0.4);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dark: #94a3b8;
+}
+
+body.light-theme .nav-header {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .brand-wrapper {
+  color: #0f172a;
+}
+
+body.light-theme .canvas-grid {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.035) 1px, transparent 1px);
+}
+
+body.light-theme .footer-corporate {
+  background: #f1f5f9;
+  border-top-color: rgba(0,0,0,0.08);
+}
+
+body.light-theme .showcase-tab-bar {
+  background: rgba(241, 245, 249, 0.95);
+}
+
+body.light-theme .panel-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 /* Global Reset */
 * {
   margin: 0;
@@ -55,6 +100,9 @@ body {
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
+  background-color: var(--canvas-dark);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Background Canvas Effects */
@@ -178,6 +226,7 @@ h1, h2, h3, h4 {
   background: rgba(7, 9, 18, 0.88);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
+  transition: background 0.3s ease;
 }
 
 .nav-container {
@@ -214,7 +263,7 @@ h1, h2, h3, h4 {
 .nav-links-wrap {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -241,6 +290,49 @@ h1, h2, h3, h4 {
   height: 2px;
   background: var(--brand-gradient);
   border-radius: 2px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.1rem;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.05);
+}
+
+/* WhatsApp Official Brand Button */
+.btn-whatsapp-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #25D366;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.btn-whatsapp-brand:hover {
+  background: rgba(37, 211, 102, 0.22);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Buttons System */
@@ -564,6 +656,10 @@ h1, h2, h3, h4 {
   margin-top: 2.5rem;
 }
 
+body.light-theme .case-study-hero-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+}
+
 .case-grid-capabilities {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -581,6 +677,10 @@ h1, h2, h3, h4 {
   gap: 0.75rem;
   font-size: 0.92rem;
   font-weight: 600;
+}
+
+body.light-theme .capability-pill {
+  background: #ffffff;
 }
 
 .capability-pill svg {
@@ -633,6 +733,10 @@ h1, h2, h3, h4 {
   font-family: var(--font-main);
   font-size: 0.95rem;
   transition: var(--transition);
+}
+
+body.light-theme .form-input-simple {
+  background: #f8fafc;
 }
 
 .form-input-simple:focus {
@@ -722,7 +826,7 @@ textarea.form-input-simple {
     top: 78px;
     left: 0;
     right: 0;
-    background: #070912;
+    background: var(--canvas-dark);
     flex-direction: column;
     padding: 1.75rem;
     border-bottom: 1px solid var(--border-subtle);

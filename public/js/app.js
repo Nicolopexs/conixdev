@@ -1,9 +1,36 @@
 /* ==========================================================================
-   CONIXDEV — Interactive Frontend Engine
+   CONIXDEV — Interactive Frontend Engine & Theme Switcher
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Interactive Software Demonstration Tabs (Cassará & Operational Panels)
+  // 1. Dark / Light Mode Switcher with localStorage persistence
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  
+  // Check user's saved preference
+  const savedTheme = localStorage.getItem('conixdev_theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+    updateThemeIcon(true);
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = document.body.classList.toggle('light-theme');
+      localStorage.setItem('conixdev_theme', isLight ? 'light' : 'dark');
+      updateThemeIcon(isLight);
+    });
+  }
+
+  function updateThemeIcon(isLight) {
+    const iconDark = document.querySelector('.theme-icon-dark');
+    const iconLight = document.querySelector('.theme-icon-light');
+    if (iconDark && iconLight) {
+      iconDark.style.display = isLight ? 'none' : 'inline';
+      iconLight.style.display = isLight ? 'inline' : 'none';
+    }
+  }
+
+  // 2. Interactive Software Demonstration Tabs (Cassará & Operational Panels)
   const tabBtns = document.querySelectorAll('.tab-btn');
   const showcasePanels = document.querySelectorAll('.showcase-panel');
 
@@ -24,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Highlight Active Menu Link based on pathname
+  // 3. Highlight Active Menu Link based on pathname
   const currentPath = window.location.pathname;
   const navLinks = document.querySelectorAll('.nav-item-link');
   
@@ -35,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 3. Mobile Navigation Menu Toggle
+  // 4. Mobile Navigation Menu Toggle
   const mobileToggleBtn = document.getElementById('mobileToggleBtn');
   const navLinksWrap = document.getElementById('navLinksWrap');
 
@@ -45,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Contact Form Handler (Direct 4-Field Form)
+  // 5. Contact Form Handler
   const contactForm = document.getElementById('conixdevContactForm');
   const contactSuccessAlert = document.getElementById('contactSuccessAlert');
 
