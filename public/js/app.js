@@ -72,62 +72,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Contact Form Handler
+  // 5. Contact Form Handler -> Envío Directo al WhatsApp +593962761063
   const contactForm = document.getElementById('conixdevContactForm');
   const contactSuccessAlert = document.getElementById('contactSuccessAlert');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const formData = new FormData(contactForm);
-      const data = Object.fromEntries(formData.entries());
+      const nombre = document.getElementById('nombre')?.value || '';
+      const empresa = document.getElementById('empresa')?.value || '';
+      const whatsapp = document.getElementById('whatsapp')?.value || '';
+      const proceso = document.getElementById('proceso_mejorar')?.value || '';
 
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Enviar Mensaje';
+      // Formatear mensaje estructurado profesional para WhatsApp
+      const mensajeWA = `Hola ConixDev! 👋 Quisiera consultar sobre un proyecto de software:\n\n` +
+        `• *Nombre:* ${nombre}\n` +
+        `• *Empresa:* ${empresa}\n` +
+        `• *Contacto:* ${whatsapp}\n` +
+        `• *Detalle:* ${proceso}`;
 
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '⏳ Enviando...';
+      const waURL = `https://wa.me/593962761063?text=${encodeURIComponent(mensajeWA)}`;
+
+      if (contactSuccessAlert) {
+        contactSuccessAlert.style.display = 'block';
+        contactSuccessAlert.innerHTML = '✔ ¡Formulario enviado! Abriendo WhatsApp con los datos para atención inmediata...';
+        contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
 
-      try {
-        const csrfTokenMeta = document.querySelector('meta[name="csrf-token"]');
-        const headers = {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        };
-
-        if (csrfTokenMeta) {
-          headers['X-CSRF-TOKEN'] = csrfTokenMeta.getAttribute('content');
-        }
-
-        await fetch('/contacto/diagnostico', {
-          method: 'POST',
-          headers: headers,
-          body: JSON.stringify(data)
-        });
-
-        if (contactSuccessAlert) {
-          contactSuccessAlert.style.display = 'block';
-          contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-
+      // Redirigir a WhatsApp de inmediato
+      setTimeout(() => {
+        window.open(waURL, '_blank');
         contactForm.reset();
-
-      } catch (err) {
-        console.warn('Handling local fallback:', err);
-        if (contactSuccessAlert) {
-          contactSuccessAlert.style.display = 'block';
-          contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-        contactForm.reset();
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalBtnText;
-        }
-      }
+      }, 700);
     });
   }
 });
