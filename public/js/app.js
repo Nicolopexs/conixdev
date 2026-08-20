@@ -111,10 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (window.emailjs) {
           try {
-            window.emailjs.init('OrR_fSm23CEIWNfFE');
+            // Intentar inicialización con objeto u opción directa
+            if (typeof window.emailjs.init === 'function') {
+              window.emailjs.init('OrR_fSm23CEIWNfFE');
+            }
             
-            // Timeout de seguridad de 5 segundos para que NUNCA se trabe la interfaz
-            const sendPromise = window.emailjs.send('service_ot3xhz4', 'kupll2s', {
+            const response = await window.emailjs.send('service_ot3xhz4', 'kupll2s', {
               nombre: nombre,
               empresa: empresa,
               whatsapp: whatsapp,
@@ -122,19 +124,16 @@ document.addEventListener('DOMContentLoaded', () => {
               proceso: proceso
             }, 'OrR_fSm23CEIWNfFE');
 
-            const timeoutPromise = new Promise((_, reject) => 
-              setTimeout(() => reject(new Error('Timeout')), 5000)
-            );
-
-            await Promise.race([sendPromise, timeoutPromise]);
-            sent = true;
+            if (response && (response.status === 200 || response.text === 'OK')) {
+              sent = true;
+            }
           } catch (eJsError) {
-            console.warn('EmailJS SDK tuvo demora o error, usando envío secundario...', eJsError);
+            console.error('Detalle error EmailJS:', eJsError);
           }
         }
 
         if (!sent) {
-          // Envío vía Web3Forms instantáneo si EmailJS tarda
+          console.warn('Ejecutando envío alternativo...');
           await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
