@@ -5,30 +5,145 @@
 
 @section('content')
 <section class="hero-surface">
-  <div class="hero-orbit hero-orbit-one"></div><div class="hero-orbit hero-orbit-two"></div><div class="hero-noise"></div>
+  <div class="hero-bg-glow"></div>
   <div class="container hero-container">
     <div class="hero-copy">
-      <div class="hero-kicker"><span class="hero-kicker-pulse"></span> Diseñamos sistemas que se mueven con tu negocio</div>
+      <div class="hero-kicker">
+        <span class="hero-kicker-pulse"></span> Cassará Ecuador · Demo En Vivo
+      </div>
       <h1 class="hero-title">Tu operación, <span>en una sola vista.</span></h1>
-      <p class="hero-lead">Conectamos personas, procesos y datos para que tu empresa deje de apagar incendios y empiece a operar con claridad.</p>
-      <div class="hero-actions"><a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow"><span>Diseñar mi sistema</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg></a><a href="#cassara-case" class="hero-text-link">Ver cómo lo hacemos <span>↗</span></a></div>
-      <div class="hero-signal-line"><span class="hero-signal-line-dot"></span><span>De la idea al sistema funcionando</span><span class="hero-signal-line-arrow">→</span><span>Web · Móvil · Automatización</span></div>
+      <p class="hero-lead">Conectamos personas, procesos y geolocalización GPS en tiempo real para que tu empresa controle el campo con claridad total.</p>
+      <div class="hero-actions">
+        <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow">
+          <span>Diseñar mi sistema</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+        <a href="#cassara-case" class="hero-text-link">Ver Caso Cassará Ecuador <span>↗</span></a>
+      </div>
+      <div class="hero-signal-line">
+        <span class="hero-signal-line-dot"></span>
+        <span>Demostración de Geolocalización GPS</span>
+        <span class="hero-signal-line-arrow">→</span>
+        <span>Quito, Ecuador</span>
+      </div>
     </div>
-    <div class="hero-command-center" data-mode="campo" data-tilt-card>
-      <div class="command-center-glow"></div>
-      <div class="command-center-topbar"><div class="command-center-brand"><span class="command-center-mark">C</span><span>CONIX / OPERATING LAYER</span></div><div class="command-center-status"><span></span> Sistema conectado</div></div>
-      <div class="command-center-body">
-        <aside class="command-center-sidebar"><div class="sidebar-caption">Módulos activos</div><button class="system-mode-btn active" data-system-mode="campo"><span class="mode-index">01</span><span><strong>Campo</strong><small>GPS · Rutas · Visitas</small></span></button><button class="system-mode-btn" data-system-mode="automatizacion"><span class="mode-index">02</span><span><strong>Automatización</strong><small>Flujos · IA · Integraciones</small></span></button><button class="system-mode-btn" data-system-mode="decisiones"><span class="mode-index">03</span><span><strong>Decisiones</strong><small>Datos · KPIs · Control</small></span></button><div class="sidebar-footer"><span class="sidebar-live-dot"></span> Datos en tiempo real</div></aside>
-        <div class="command-center-main">
-          <div class="command-center-heading"><div><span class="command-center-eyebrow" data-mode-eyebrow>CONTROL DE OPERACIÓN</span><h2 data-mode-title>Todo el campo, bajo control.</h2></div><div class="command-center-time">09:41:28 <span>ECT</span></div></div>
-          <div class="system-panel system-panel-campo"><div class="map-panel"><div class="map-panel-grid"></div><div class="map-route route-one"></div><div class="map-route route-two"></div><div class="map-route route-three"></div><div class="map-zone zone-one"></div><div class="map-zone zone-two"></div><span class="map-pin pin-one"><i></i><b>Quito Norte</b></span><span class="map-pin pin-two"><i></i><b>Cumbayá</b></span><span class="map-pin pin-three"><i></i><b>Valle</b></span><span class="map-pulse pulse-one"></span><span class="map-pulse pulse-two"></span><div class="map-label">COBERTURA ACTIVA <strong>86%</strong></div></div><div class="system-side-metrics"><div class="metric-row"><span>Visitas hoy</span><strong>128 <em>+18%</em></strong></div><div class="metric-row"><span>Personal en campo</span><strong>24 <i></i></strong></div><div class="metric-row"><span>Rutas completadas</span><strong>67%</strong></div><div class="mini-progress"><span></span></div></div></div>
-          <div class="system-panel system-panel-automatizacion"><div class="workflow-panel"><div class="workflow-line"></div><div class="workflow-node node-trigger"><small>ENTRADA</small><strong>Factura recibida</strong><span>Foto / correo / API</span></div><div class="workflow-node node-ai"><small>PROCESAMIENTO</small><strong>IA extrae datos</strong><span>RUC · monto · ítems</span></div><div class="workflow-node node-result"><small>ACCIÓN</small><strong>Gasto clasificado</strong><span>Listo para aprobar</span></div></div><div class="automation-aside"><span class="automation-badge">FLUJO ACTIVO</span><strong>43</strong><span>documentos procesados</span><div class="automation-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
-          <div class="system-panel system-panel-decisiones"><div class="decision-chart"><div class="chart-grid"></div><div class="chart-axis"><span>100</span><span>50</span><span>0</span></div><svg viewBox="0 0 480 180" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity=".35"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 145 C45 135 50 120 90 128 S135 100 175 112 S218 90 258 98 S300 48 345 62 S390 35 430 52 S460 22 480 28 V180 H0 Z"/><path class="chart-line" d="M0 145 C45 135 50 120 90 128 S135 100 175 112 S218 90 258 98 S300 48 345 62 S390 35 430 52 S460 22 480 28"/></svg><div class="chart-caption"><span>Rendimiento operativo</span><strong>+32.8%</strong></div></div><div class="decision-kpis"><div><small>Tiempo ahorrado</small><strong>184h</strong><span>este mes</span></div><div><small>Datos confiables</small><strong>99.4%</strong><span>sin reprocesos</span></div></div></div>
-          <div class="command-center-bottom"><span class="bottom-signal"></span><span data-mode-message>Visitadores sincronizados con el panel central</span><span class="bottom-code">LIVE / 03</span></div>
+
+    <div class="hero-cassara-demo">
+      <!-- Barra Superior de Métricas Operativas (Copia Screenshot 3) -->
+      <div class="cassara-top-stats">
+        <div class="cassara-stat-item">
+          <span class="stat-icon">🚶</span>
+          <div>
+            <small>DISTANCIA</small>
+            <strong id="cassaraStatDist">8.65 km</strong>
+          </div>
+        </div>
+        <div class="cassara-stat-item">
+          <span class="stat-icon">⏱️</span>
+          <div>
+            <small>DURACIÓN JORNADA</small>
+            <strong id="cassaraStatDuration">07:14:30</strong>
+          </div>
+        </div>
+        <div class="cassara-stat-item">
+          <span class="stat-icon">🎯</span>
+          <div>
+            <small>VISITAS</small>
+            <strong id="cassaraStatVisits">8</strong>
+          </div>
+        </div>
+        <div class="cassara-stat-item">
+          <span class="stat-icon">📍</span>
+          <div>
+            <small>PUNTOS GPS</small>
+            <strong id="cassaraStatGps">353</strong>
+          </div>
+        </div>
+        <div class="cassara-live-badge">
+          <span class="live-dot"></span>
+          <span>En vivo | Última señal: <strong id="cassaraLiveTime">16:43:36 (hace 47s)</strong></span>
+        </div>
+      </div>
+
+      <!-- Barra de Controles y Leyenda -->
+      <div class="cassara-toolbar">
+        <div class="cassara-legend">
+          <span class="legend-title">LEYENDA:</span>
+          <span class="legend-tag tag-route"><i class="dot-route"></i> Ruta</span>
+          <span class="legend-tag tag-start"><i class="dot-start"></i> Inicio</span>
+          <span class="legend-tag tag-end"><i class="dot-end"></i> Fin</span>
+          <span class="legend-tag tag-effective"><i class="dot-effective"></i> Visita Efectiva</span>
+        </div>
+        <div class="cassara-controls">
+          <button id="btnReproducirRuta" class="btn-cassara-play">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <span>Reproducir Ruta</span>
+          </button>
+          <button id="btnCentrarMapa" class="btn-cassara-btn">Centrar</button>
+          <div class="cassara-visit-pills">
+            <button class="visit-pill active" data-visit="1">1</button>
+            <button class="visit-pill" data-visit="2">2</button>
+            <button class="visit-pill" data-visit="3">3</button>
+            <button class="visit-pill" data-visit="4">4</button>
+            <button class="visit-pill" data-visit="5">5</button>
+            <button class="visit-pill" data-visit="6">6</button>
+            <button class="visit-pill" data-visit="7">7</button>
+            <button class="visit-pill" data-visit="8">8</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenedor del Mapa Interactivo y Modal Detalle -->
+      <div class="cassara-map-wrapper">
+        <div id="quitoMapContainer" class="quito-map-frame"></div>
+
+        <!-- Tarjeta Flotante Detalle de Visita Médica (Copia Screenshot 4) -->
+        <div id="cassaraDoctorModal" class="doctor-detail-card">
+          <button id="closeDoctorModal" class="card-close-btn" aria-label="Cerrar">&times;</button>
+          <div class="doctor-card-header">
+            <span class="doc-num-pill" id="modalVisitNum">1</span>
+            <span class="doc-role-badge">👨‍⚕️ MÉDICO</span>
+            <span class="doc-status-badge tag-effective" id="modalVisitStatus">Visita Efectiva</span>
+          </div>
+          <h3 class="doctor-name" id="modalDocName">Dr. Jose Manolo Maestre Guzman</h3>
+          <div class="doctor-meta">
+            <span>📅 20/8/2026</span>
+            <span>🕒 <strong id="modalVisitTime">10:15</strong></span>
+          </div>
+          <div class="doctor-notes" id="modalVisitNotes">
+            <strong>Notas:</strong> Dr. Manolo agradece la visita. Confirma recepción de muestras médicas y catálogo de productos.
+          </div>
+          <div class="samples-table-wrap">
+            <div class="samples-table-head">
+              <span>💧 MUESTRAS MÉDICAS</span>
+              <small>PLAN / ENTR</small>
+            </div>
+            <table class="samples-table">
+              <thead>
+                <tr>
+                  <th>Producto (MM)</th>
+                  <th style="text-align:center;">P</th>
+                  <th style="text-align:center;">E</th>
+                </tr>
+              </thead>
+              <tbody id="modalSamplesBody">
+                <tr><td>MEDICAMENTO DEMO A X 250 DOSIS</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+                <tr><td>MEDICAMENTO DEMO B X 100 MG</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+                <tr><td>FÁRMACO GENÉRICO C X 200 DOSIS</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+                <tr><td>SOLUCIÓN ORAL DEMO X 150 ML</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+                <tr><td>CÁPSULAS DE CONTROL D X 30 UNID</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+                <tr><td>JARABE MULTIVITAMÍNICO E X 200 ML</td><td align="center">1</td><td align="center" class="text-green">1</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
-    <div class="hero-proof-row"><span>Una sola lógica para todo lo que tu empresa necesita resolver</span><div><b>01</b> Procesos <b>02</b> Personas <b>03</b> Información</div></div>
+
+    <div class="hero-proof-row">
+      <span>Sistema de Geolocalización y Control de Operaciones · ConixDev Ecuador</span>
+      <div><b>01</b> Rastreo GPS <b>02</b> Reportes Médicos <b>03</b> Muestras Entregadas</div>
+    </div>
   </div>
 </section>
 
