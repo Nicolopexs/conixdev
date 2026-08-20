@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=3.0.0" />
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=5.0.0" />
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
