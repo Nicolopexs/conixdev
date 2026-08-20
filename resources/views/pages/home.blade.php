@@ -5,46 +5,34 @@
 
 @section('content')
 <!-- HERO PRINCIPAL — Impacto Inmediato Sin Frases Genéricas -->
-<section style="padding-top: 9.5rem; padding-bottom: 5rem; position: relative;">
+<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge">
+    <div class="trust-badge" style="margin-bottom: 1.25rem;">
       <span class="trust-badge-dot"></span>
       Software Empresarial Construido a Medida
     </div>
 
-    <h1 class="title-hero" style="max-width: 980px; margin: 0 auto 1.5rem;">
+    <h1 class="title-hero" style="max-width: 980px; margin: 0 auto 1.25rem;">
       Desarrollamos el <span class="text-gradient">software que tu empresa necesita</span>
     </h1>
 
-    <p style="font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--text-muted); max-width: 780px; margin: 0 auto 2.5rem; line-height: 1.6;">
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 780px; margin: 0 auto 2rem; line-height: 1.6;">
       Analizamos los problemas de tu operación y construimos aplicaciones web y móviles personalizadas para que tu empresa controle mejor su trabajo y automatice sus procesos.
     </p>
 
-    <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3.5rem;">
-      <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow" style="padding: 0.95rem 2rem; font-size: 1rem;">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+      <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
         <span>Hablar con ConixDev</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
       </a>
-      <a href="#cassara-case" class="btn-action btn-secondary-dark" style="padding: 0.95rem 2rem; font-size: 1rem;">
+      <a href="#cassara-case" class="btn-action btn-secondary-dark" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
         <span>Ver Trabajo Real</span>
       </a>
     </div>
 
     <!-- PREVISUALIZACIÓN INTERACTIVA DE SOFTWARE REAL -->
-    <section class="section-spacing section-alt-bg">
-  <div class="container text-center">
-    <span class="trust-badge">Diagnóstico de Operaciones</span>
-    <h2 class="title-section" style="max-width: 800px; margin: 0 auto 1rem;">
-      ¿Tu empresa pierde tiempo y control por operar en <span class="text-gradient">Excel y WhatsApp</span>?
-    </h2>
-  </div>
-</section>
-
-<!-- Software Showcase Interactive Frame -->
-<section class="section-spacing">
-  <div class="container">
-    <div class="hero-software-showcase">
+    <div class="hero-software-showcase" style="margin-top: 1.5rem;">
       <div class="showcase-tab-bar">
         <div class="showcase-window-dots">
           <span class="window-dot dot-r"></span>
@@ -56,11 +44,11 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
             <span>Geolocalización & Campo</span>
           </button>
-          <button class="tab-btn" data-tab="tab-ocr">
+          <button class="tab-btn" data-tab="tab-ia">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/><circle cx="12" cy="5" r="2"/></svg>
             <span>Escaneo IA Facturas</span>
           </button>
-          <button class="tab-btn" data-tab="tab-dashboard">
+          <button class="tab-btn" data-tab="tab-dash">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
             <span>Dashboard Operativo</span>
           </button>
@@ -122,14 +110,14 @@
 <!-- 2. PROBLEMA OPERATIVO REAL -->
 <section class="section-spacing section-alt-bg">
   <div class="container">
-    <div style="text-align: center; max-width: 820px; margin: 0 auto 3rem;">
-      <span class="trust-badge">Diagnóstico de Operaciones</span>
+    <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Diagnóstico de Operaciones</span>
       <h2 class="title-section">
         ¿Tu empresa pierde tiempo y control por operar en <span class="text-gradient">Excel y WhatsApp</span>?
       </h2>
     </div>
 
-    <div class="cards-layout-grid">
+    <div class="cards-layout-grid" style="margin-top: 1.5rem;">
       <div class="card-box">
         <div class="card-icon-svg">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -237,12 +225,12 @@
 <!-- 4. CAPACIDADES DESDE LA PERSPECTIVA DEL CLIENTE -->
 <section class="section-spacing section-alt-bg">
   <div class="container">
-    <div style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
-      <span class="trust-badge">Nuestras Soluciones</span>
+    <div style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Nuestras Soluciones</span>
       <h2 class="title-section">¿Qué construimos para tu empresa?</h2>
     </div>
 
-    <div class="cards-layout-grid">
+    <div class="cards-layout-grid" style="margin-top: 1.5rem;">
       <div class="card-box">
         <h3 class="title-card" style="margin-bottom: 0.75rem;">Aplicaciones Empresariales</h3>
         <p class="body-sm">Plataformas completas para administrar, supervisar y controlar las operaciones internas de tu negocio desde cualquier navegador.</p>
@@ -308,13 +296,9 @@
   <div class="container">
     <div class="contact-simple-card">
       <div style="text-align: center; margin-bottom: 2rem;">
-        <span class="trust-badge">Comunicación Directa</span>
-        <h2 class="title-section" style="font-size: clamp(1.8rem, 3vw, 2.5rem);">
-          Hablar con ConixDev
-        </h2>
-        <p style="color: var(--text-muted); font-size: 1rem; margin-top: 0.5rem;">
-          Cuéntanos brevemente qué necesita tu empresa y analizaremos tu proyecto.
-        </p>
+        <span class="trust-badge" style="margin-bottom: 0.75rem;">Contacto Directo</span>
+        <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con <span class="text-gradient">ConixDev</span></h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">Sin intermediarios ni formularios largos. Responderemos a la brevedad.</p>
       </div>
 
       <div id="contactSuccessAlert" style="display: none; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); color: var(--brand-cyan-glow); padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
@@ -334,15 +318,15 @@
 
         <div class="form-field-group">
           <label class="form-label-simple" for="whatsapp">WhatsApp o Correo de contacto *</label>
-          <input type="text" id="whatsapp" name="whatsapp" class="form-input-simple" placeholder="Ej. +593 99 123 4567 o correo@empresa.com" required />
+          <input type="text" id="whatsapp" name="whatsapp" class="form-input-simple" placeholder="Ej. +593 96 276 1063 o correo@empresa.com" required />
         </div>
 
         <div class="form-field-group">
-          <label class="form-label-simple" for="proceso_mejorar">Cuéntanos brevemente qué necesitas o deseas mejorar *</label>
+          <label class="form-label-simple" for="proceso_mejorar">Cuéntanos brevemente qué necesitas *</label>
           <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Queremos controlar las visitas de nuestro personal de campo con geolocalización..." required></textarea>
         </div>
 
-        <div style="margin-top: 2rem; text-align: center;">
+        <div style="margin-top: 1.75rem; text-align: center;">
           <button type="submit" class="btn-action btn-primary-glow" style="width: 100%; font-size: 1rem;">
             Enviar Mensaje a ConixDev
           </button>
