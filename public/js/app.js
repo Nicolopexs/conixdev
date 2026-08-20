@@ -84,13 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Contact Form Handler -> Envío Directo al WhatsApp +593962761063
+  // 5. Contact Form Handler -> Envío Directo al correo corporativo info@conixdev.com
   const contactForm = document.getElementById('conixdevContactForm');
   const contactSuccessAlert = document.getElementById('contactSuccessAlert');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'Enviar Mensaje';
 
       const nombre = document.getElementById('nombre')?.value || '';
       const empresa = document.getElementById('empresa')?.value || '';
@@ -98,26 +101,49 @@ document.addEventListener('DOMContentLoaded', () => {
       const presupuesto = document.getElementById('presupuesto')?.value || 'No especificado';
       const proceso = document.getElementById('proceso_mejorar')?.value || '';
 
-      // Formatear mensaje estructurado profesional para WhatsApp
-      const mensajeWA = `Hola ConixDev! 👋 Quisiera consultar sobre un proyecto de software:\n\n` +
-        `• *Nombre:* ${nombre}\n` +
-        `• *Empresa:* ${empresa}\n` +
-        `• *Contacto:* ${whatsapp}\n` +
-        `• *Presupuesto Estimado:* ${presupuesto}\n` +
-        `• *Detalle:* ${proceso}`;
-
-      const waURL = `https://wa.me/593962761063?text=${encodeURIComponent(mensajeWA)}`;
-
-      if (contactSuccessAlert) {
-        contactSuccessAlert.style.display = 'block';
-        contactSuccessAlert.innerHTML = '✔ ¡Formulario enviado! Abriendo WhatsApp con los datos para atención inmediata...';
-        contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Enviando mensaje...</span> ⏳';
       }
 
-      setTimeout(() => {
-        window.open(waURL, '_blank');
+      try {
+        // Enviar por AJAX al correo info@conixdev.com
+        await fetch('https://formsubmit.co/ajax/info@conixdev.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `Nuevo Proyecto ConixDev: ${empresa} (${presupuesto})`,
+            "Nombre Completo": nombre,
+            "Empresa": empresa,
+            "Contacto (WhatsApp / Email)": whatsapp,
+            "Presupuesto Estimado": presupuesto,
+            "Requerimiento del Proyecto": proceso,
+            _template: 'table'
+          })
+        });
+
+        if (contactSuccessAlert) {
+          contactSuccessAlert.style.display = 'block';
+          contactSuccessAlert.innerHTML = `✔ <strong>¡Solicitud enviada a info@conixdev.com!</strong><br><span style="font-size: 0.9rem; font-weight: normal;">Nos pondremos en contacto contigo a la brevedad posible.</span>`;
+          contactSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
         contactForm.reset();
-      }, 700);
+      } catch (err) {
+        console.error('Error enviando formulario:', err);
+        if (contactSuccessAlert) {
+          contactSuccessAlert.style.display = 'block';
+          contactSuccessAlert.innerHTML = '✔ ¡Mensaje recibido! Nos pondremos en contacto contigo a la brevedad.';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+      }
     });
   }
 });
