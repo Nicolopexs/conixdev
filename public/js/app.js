@@ -107,33 +107,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       try {
-        let sent = false;
-
-        // 1. Intentar envío con EmailJS SDK v4 (Plantilla 100% personalizada en español)
-        if (typeof emailjs !== 'undefined') {
-          try {
-            emailjs.init({ publicKey: 'OrR_fSm23CEIWNfFE' });
-            await emailjs.send('service_ot3xhz4', 'kupll2s', {
-              nombre: nombre,
-              empresa: empresa,
-              whatsapp: whatsapp,
-              presupuesto: presupuesto,
-              proceso: proceso
-            }, { publicKey: 'OrR_fSm23CEIWNfFE' });
-            sent = true;
-          } catch (eJsErr) {
-            console.warn('EmailJS SDK falló, intentando Web3Forms...', eJsErr);
-          }
-        }
-
-        // 2. Respaldo de alta disponibilidad (Web3Forms) si EmailJS no estuviera disponible
-        if (!sent) {
+        if (window.emailjs) {
+          window.emailjs.init({ publicKey: 'OrR_fSm23CEIWNfFE' });
+          await window.emailjs.send('service_ot3xhz4', 'kupll2s', {
+            nombre: nombre,
+            empresa: empresa,
+            whatsapp: whatsapp,
+            presupuesto: presupuesto,
+            proceso: proceso
+          });
+        } else {
+          // Si por alguna razón la CDN no cargó, enviar vía Web3Forms
           await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify({
               access_key: 'b583528f-5f0f-462a-a01c-fceb9431d716',
               subject: `🚀 Nuevo Proyecto ConixDev: ${empresa || 'Cliente'} (${presupuesto})`,
