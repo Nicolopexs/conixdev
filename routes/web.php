@@ -6,17 +6,29 @@ use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
-| ConixDev Multi-Page Web Routes
+| ConixDev Multi-Page Web Routes — Arquitectura SEO B2B & GEO (IA)
 |--------------------------------------------------------------------------
-|
-| Arquitectura corporativa de rutas independientes para conixdev.com
-|
 */
 
 Route::get('/', [PageController::class, 'home'])->name('home');
+
+// Servicos Generales & Verticaes Dedicadas
 Route::get('/servicios', [PageController::class, 'servicios'])->name('servicios');
+Route::get('/desarrollo-software-ecuador', [PageController::class, 'desarrolloSoftwareEcuador'])->name('servicios.software-ecuador');
+Route::get('/desarrollo-aplicaciones-moviles', [PageController::class, 'desarrolloAplicacionesMoviles'])->name('servicios.apps-moviles');
+Route::get('/software-empresarial', [PageController::class, 'softwareEmpresarial'])->name('servicios.software-empresarial');
+Route::get('/automatizacion-procesos', [PageController::class, 'automatizacionProcesos'])->name('servicios.automatizacion');
+
+// Casos de Éxito & Evidencia Real (E-E-A-T)
 Route::get('/casos-de-exito', [PageController::class, 'casosIndex'])->name('casos.index');
 Route::get('/casos-de-exito/cassara-ecuador', [PageController::class, 'cassaraDetail'])->name('casos.cassara');
+
+// Centro de Conocimiento / Blog (Respuestas para Búsquedas por IA & Google)
+Route::get('/blog', [PageController::class, 'blogIndex'])->name('blog.index');
+Route::get('/blog/cuanto-cuesta-desarrollar-software-ecuador', [PageController::class, 'blogCostoSoftware'])->name('blog.costo-software');
+Route::get('/blog/software-a-medida-vs-estandar', [PageController::class, 'blogMedidaVsEstandar'])->name('blog.medida-vs-estandar');
+
+// Empresa & Conversión
 Route::get('/nosotros', [PageController::class, 'nosotros'])->name('nosotros');
 Route::get('/diagnostico', [PageController::class, 'diagnostico'])->name('diagnostico');
 Route::get('/contacto', [PageController::class, 'contacto'])->name('contacto');

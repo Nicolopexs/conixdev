@@ -2,8 +2,56 @@
 
 @section('title', 'Caso de Éxito: Cassará Ecuador | ConixDev Software')
 @section('description', 'Estudio de caso visual de la plataforma empresarial desarrollada a medida por ConixDev para Cassará Ecuador: geolocalización de visitadores y escaneo de facturas con IA.')
+@section('canonical', 'https://conixdev.com/casos-de-exito/cassara-ecuador')
 
 @section('content')
+<!-- SCHEMA.ORG JSON-LD CASE STUDY -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://conixdev.com/casos-de-exito/cassara-ecuador#article",
+      "headline": "Caso de Éxito: Plataforma Empresarial Cassará Ecuador",
+      "description": "Estudio de caso del software desarrollado por ConixDev para la farmacéutica Cassará Ecuador, digitalizando la supervisión con geolocalización GPS y lectura OCR de facturas con IA.",
+      "author": {
+        "@type": "Organization",
+        "name": "ConixDev"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ConixDev",
+        "url": "https://conixdev.com"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://conixdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Casos de Éxito",
+          "item": "https://conixdev.com/casos-de-exito"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cassará Ecuador",
+          "item": "https://conixdev.com/casos-de-exito/cassara-ecuador"
+        }
+      ]
+    }
+  ]
+}
+</script>
 <section style="padding-top: 7rem; padding-bottom: 2.5rem;">
   <div class="container">
     <div style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">

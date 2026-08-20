@@ -1,0 +1,250 @@
+@extends('layouts.main')
+
+@section('title', 'Empresa de Desarrollo de Software en Ecuador y Quito | ConixDev')
+@section('description', 'Desarrollo de software a medida en Ecuador y Quito. Construimos aplicaciones web y móviles personalizadas para empresas que necesitan controlar sus operaciones y automatizar procesos.')
+@section('canonical', 'https://conixdev.com/desarrollo-software-ecuador')
+
+@section('content')
+<!-- SCHEMA.ORG JSON-LD ESPECÍFICO DE SERVICIO LOCAL -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://conixdev.com/desarrollo-software-ecuador#service",
+      "name": "Desarrollo de Software a Medida en Ecuador",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "ConixDev",
+        "image": "https://conixdev.com/images/logo.png",
+        "telephone": "+593962761063",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Quito",
+          "addressRegion": "Pichincha",
+          "addressCountry": "EC"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Ecuador"
+      },
+      "description": "Desarrollo de aplicaciones web y móviles empresariales personalizadas a las necesidades operativas de empresas en Quito, Guayaquil y todo el Ecuador."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://conixdev.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Desarrollo de Software Ecuador",
+          "item": "https://conixdev.com/desarrollo-software-ecuador"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Por qué contratar una empresa de desarrollo de software local en Ecuador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabajar con ConixDev en Ecuador te garantiza comunicación directa en el mismo huso horario, comprensión profunda del contexto empresarial local (regulaciones del SRI, facturación electrónica ecuatoriana, logística territorial) y reuniones ejecutivas ágiles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tipo de software empresarial desarrollan en Quito y Ecuador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desarrollamos sistemas de gestión operativa a medida, plataformas web para control de inventarios y logística, aplicaciones móviles con geolocalización GPS para personal de campo, y automatizaciones con Inteligencia Artificial para procesamiento masivo de documentos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Quién es el dueño del código fuente del software desarrollado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El cliente es propietario del 100% del código fuente, licencias y propiedad intelectual del sistema desarrollado por ConixDev al finalizar el proyecto."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- HERO DE SERVICIO LOCAL ECUADOR -->
+<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
+  <div class="canvas-glow-1"></div>
+  <div class="container" style="text-align: center;">
+    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+      <span class="trust-badge-dot"></span>
+      Ingeniería de Software Local en Ecuador & Quito
+    </div>
+
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
+      Desarrollo de <span class="text-gradient">Software a Medida en Ecuador</span>
+    </h1>
+
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2.25rem; line-height: 1.6;">
+      Ayudamos a empresas ecuatorianas a reemplazar hojas de cálculo de Excel y chats dispersos de WhatsApp por sistemas informáticos propios, seguros y diseñados exactamente para su operación.
+    </p>
+
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+      <a href="#contacto-directo" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
+        <span>Solicitar Diagnóstico Técnico en Ecuador</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="btn-action btn-secondary-dark" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
+        <span>Ver Caso Real en Ecuador</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ¿POR QUÉ SOFTWARE A MEDIDA EN ECUADOR? -->
+<section class="section-spacing section-alt-bg">
+  <div class="container">
+    <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Ventaja Competitiva</span>
+      <h2 class="title-section">
+        ¿Por qué tu empresa en Ecuador necesita un <span class="text-gradient">software personalizado</span>?
+      </h2>
+      <p style="color: var(--text-muted); font-size: 1.05rem;">
+        Los programas comerciales enlatados obligan a tu negocio a adaptarse a sus rigideces. Un sistema a medida desarrollado por ConixDev se construye 100% sobre tu forma real de trabajar.
+      </p>
+    </div>
+
+    <div class="cards-layout-grid" style="margin-top: 1.5rem;">
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.75rem;">Propiedad del 100% del Código</h3>
+        <p class="body-sm">Sin pagar licencias mensuales perpetuas por usuario. Tu empresa es dueña absoluta del sistema y su tecnología.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.75rem;">Adaptación al Mercado Ecuatoriano</h3>
+        <p class="body-sm">Integración nativa con facturación electrónica SRI, comprobantes deducibles y procesos logísticos de Quito, Guayaquil y provincias.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.75rem;">Control Absoluto y Seguridad</h3>
+        <p class="body-sm">Protección de datos confidenciales con roles de usuario configurables y auditorías de actividad en tiempo real.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.75rem;">Escalabilidad Sin Límites</h3>
+        <p class="body-sm">El software crece junto con tu negocio. Si tu operación añade nuevas áreas o sucursales, el sistema se expande sin fricciones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASO REAL EN ECUADOR -->
+<section class="section-spacing">
+  <div class="container">
+    <div class="case-study-hero-card">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div>
+          <span class="trust-badge" style="margin-bottom: 0.75rem;">Evidencia de Trabajo en Ecuador</span>
+          <h2 class="title-section">Caso de Éxito Real: <span class="text-gradient">Cassará Ecuador</span></h2>
+        </div>
+        <a href="{{ url('/casos-de-exito/cassara-ecuador') }}" class="btn-action btn-primary-glow">
+          <span>Ver caso completo de estudio</span>
+        </a>
+      </div>
+
+      <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 820px; margin-bottom: 1.5rem; line-height: 1.6;">
+        Desarrollamos una plataforma integral a la medida para la farmacéutica Cassará Ecuador, digitalizando la operación de sus visitadores médicos en terreno con geolocalización GPS, auditoría de visitas y lectura con IA de facturas físicas.
+      </p>
+
+      <div class="case-grid-capabilities">
+        <div class="capability-pill"><span>Trazabilidad GPS en terreno ecuatoriano</span></div>
+        <div class="capability-pill"><span>Escaneo inteligente de facturas físicas</span></div>
+        <div class="capability-pill"><span>Dashboard ejecutivo de ciclos de avance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES (GEO & SEARCH INTENT) -->
+<section class="section-spacing section-alt-bg">
+  <div class="container" style="max-width: 850px;">
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Criterios Técnicos</span>
+      <h2 class="title-section">Preguntas Frecuentes sobre Desarrollo de Software en Ecuador</h2>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">¿Por qué elegir una empresa local en Ecuador en lugar de freelancers internacionales?</h3>
+        <p class="body-sm">Contratar a ConixDev te ofrece el respaldo de un equipo de ingeniería responsable localmente en Ecuador, contratos formales bajo legislación ecuatoriana, atención directa sin diferencias de horario y cumplimiento con estándares locales.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">¿Cuánto tiempo toma desarrollar un sistema a medida?</h3>
+        <p class="body-sm">Un sistema o prototipo operativo de alta prioridad suele entregarse en pocas semanas mediante fases incrementales, permitiendo a tu empresa usar las funciones principales rápidamente mientras se expanden módulos secundarios.</p>
+      </div>
+
+      <div class="card-box">
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">¿Cómo coordinar reuniones si estamos en Quito, Guayaquil u otra ciudad?</h3>
+        <p class="body-sm">Nuestra base está en Quito, Ecuador, y realizamos sesiones de diagnóstico y seguimiento tanto presenciales como por videoconferencia con empresas de todo el país.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO DE CONTACTO DIRECTO -->
+<section class="section-spacing" id="contacto-directo">
+  <div class="container">
+    <div class="contact-simple-card">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <span class="trust-badge" style="margin-bottom: 0.75rem;">Contacto Directo en Ecuador</span>
+        <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con un <span class="text-gradient">Ingeniero de ConixDev</span></h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">Sin intermediarios ni vendedores molestos. Evaluemos tu proyecto en Ecuador a la brevedad.</p>
+      </div>
+
+      <div id="contactSuccessAlert" style="display: none; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); color: var(--brand-cyan-glow); padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
+        ✔ ¡Formulario enviado! Abriendo WhatsApp con los datos para atención inmediata...
+      </div>
+
+      <form id="conixdevContactForm">
+        <div class="form-field-group">
+          <label class="form-label-simple" for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" class="form-input-simple" placeholder="Ej. Carlos Mendoza" required />
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-label-simple" for="empresa">Nombre de tu empresa en Ecuador *</label>
+          <input type="text" id="empresa" name="empresa" class="form-input-simple" placeholder="Ej. Comercializadora Quito S.A." required />
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-label-simple" for="whatsapp">WhatsApp o Correo de contacto *</label>
+          <input type="text" id="whatsapp" name="whatsapp" class="form-input-simple" placeholder="Ej. +593 96 276 1063" required />
+        </div>
+
+        <div class="form-field-group">
+          <label class="form-label-simple" for="proceso_mejorar">¿Qué proceso necesita digitalizar tu empresa? *</label>
+          <textarea id="proceso_mejorar" name="proceso_mejorar" class="form-input-simple" placeholder="Ej. Reemplazar nuestros reportes en Excel por un sistema web con geolocalización GPS..." required></textarea>
+        </div>
+
+        <div style="margin-top: 1.75rem; text-align: center;">
+          <button type="submit" class="btn-action btn-primary-glow" style="width: 100%; font-size: 1rem;">
+            Enviar Consulta Directa a ConixDev
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+@endsection

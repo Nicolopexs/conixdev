@@ -16,6 +16,26 @@ class PageController extends Controller
         return view('pages.servicios');
     }
 
+    public function desarrolloSoftwareEcuador()
+    {
+        return view('pages.desarrollo-software-ecuador');
+    }
+
+    public function desarrolloAplicacionesMoviles()
+    {
+        return view('pages.desarrollo-aplicaciones-moviles');
+    }
+
+    public function softwareEmpresarial()
+    {
+        return view('pages.software-empresarial');
+    }
+
+    public function automatizacionProcesos()
+    {
+        return view('pages.automatizacion-procesos');
+    }
+
     public function casosIndex()
     {
         return view('pages.casos-index');
@@ -24,6 +44,21 @@ class PageController extends Controller
     public function cassaraDetail()
     {
         return view('pages.cassara-detail');
+    }
+
+    public function blogIndex()
+    {
+        return view('pages.blog-index');
+    }
+
+    public function blogCostoSoftware()
+    {
+        return view('pages.blog-costo-software');
+    }
+
+    public function blogMedidaVsEstandar()
+    {
+        return view('pages.blog-medida-vs-estandar');
     }
 
     public function nosotros()
