@@ -42,20 +42,21 @@
 }
 </script>
 
-<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
+<!-- HERO SOFTWARE EMPRESARIAL -->
+<section style="padding-top: 6.5rem; padding-bottom: 1.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 0.75rem;">
       <span class="trust-badge-dot"></span>
-      Sistemas Operativos Corporativos a Medida
+      Sistemas Operativos Web & Control Empresarial
     </div>
 
-    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
-      Software Empresarial para <span class="text-gradient">Control Operativo Total</span>
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 0.75rem;">
+      Desarrollo de <span class="text-gradient">Software Empresarial a Medida</span>
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2.25rem; line-height: 1.6;">
-      Diseñamos plataformas web robustas que centralizan los datos de tu empresa, automatizan reportes y eliminan los errores del ingreso manual.
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 1.25rem; line-height: 1.6;">
+      Desarrollamos sistemas web a medida para centralizar la información operativa, auditar procesos en tiempo real y eliminar la dependencia de archivos de Excel.
     </p>
 
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">

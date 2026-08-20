@@ -12,8 +12,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/css/app.css?v=5.0.0" />
+  <link rel="stylesheet" href="/css/app.css?v=6.0.0" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ConixDev",
+    "url": "https://conixdev.com/servicios"
+  }
+  </script>
 </head>
 <body>
   <div class="canvas-grid"></div>
@@ -22,28 +31,21 @@
   <header class="nav-header">
     <div class="container nav-container">
       <a href="/" class="brand-wrapper">
-        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0284c7" />
-              <stop offset="100%" stop-color="#06b6d4" />
-            </linearGradient>
-          </defs>
-          <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
+        <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
+          <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="#0284c7" />
           <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
           <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
           <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
-          <rect x="84" y="27" width="9" height="9" fill="#06b6d4" rx="2" />
-          <rect x="78" y="38" width="9" height="9" fill="#38bdf8" rx="2" />
         </svg>
         <span class="brand-text">Conix<span>Dev</span></span>
       </a>
 
       <ul class="nav-links-wrap" id="navLinksWrap">
         <li><a href="/" class="nav-item-link">Inicio</a></li>
-        <li><a href="/casos-de-exito/cassara-ecuador" class="nav-item-link">Caso Cassará</a></li>
+        <li><a href="/desarrollo-software-ecuador" class="nav-item-link">Software Ecuador</a></li>
         <li><a href="/servicios" class="nav-item-link active">Capacidades</a></li>
-        <li><a href="/nosotros" class="nav-item-link">Sobre ConixDev</a></li>
+        <li><a href="/casos-de-exito/cassara-ecuador" class="nav-item-link">Caso Cassará</a></li>
+        <li><a href="/blog" class="nav-item-link">Centro Conocimiento</a></li>
         <li><a href="/contacto" class="nav-item-link">Contacto</a></li>
         <li><a href="/contacto" class="btn-action btn-primary-glow" style="padding: 0.55rem 1.25rem;">Hablar con ConixDev</a></li>
         <li>
@@ -73,64 +75,65 @@
   </header>
 
   <main style="flex: 1;">
-    <section style="padding-top: 7rem; padding-bottom: 2.5rem;">
+    <section style="padding-top: 6.5rem; padding-bottom: 1.25rem;">
       <div class="container">
-        <span class="trust-badge">Soluciones para Empresas</span>
-        <h1 class="title-hero" style="margin-bottom: 1rem;">
+        <span class="trust-badge" style="margin-bottom: 0.75rem;">Soluciones para Empresas</span>
+        <h1 class="title-hero" style="margin-bottom: 0.75rem;">
           ¿Qué desarrollamos para <span class="text-gradient">tu empresa</span>?
         </h1>
-        <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+        <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; line-height: 1.6;">
           Organizamos nuestras capacidades alrededor de los problemas operativos de tu negocio, no mediante listas aburridas de código.
         </p>
       </div>
     </section>
 
-    <section class="section-spacing">
+    <section class="section-spacing" style="padding-top: 0.75rem;">
       <div class="container">
         <div class="cards-layout-grid">
+          <a href="/software-empresarial" class="card-box" style="text-decoration: none;">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">01 / OPERACIONES CENTRALIZADAS</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem; color: var(--text-main);">Aplicaciones Empresariales</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Sistemas completos accesibles desde cualquier navegador para administrar, controlar y auditar las actividades de tu empresa.</p>
+          </a>
+
+          <a href="/desarrollo-aplicaciones-moviles" class="card-box" style="text-decoration: none;">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">02 / EQUIPOS Y CLIENTES</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem; color: var(--text-main);">Aplicaciones Móviles</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Apps intuitivas diseñadas para que tus empleados en terreno o tus clientes interactúen desde cualquier lugar sin depender de una computadora.</p>
+          </a>
+
+          <a href="/automatizacion-procesos" class="card-box" style="text-decoration: none;">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">03 / EFICIENCIA OPERATIVA</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem; color: var(--text-main);">Automatización de Procesos</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Convertimos tareas manuales repetitivas en flujos digitales automáticos para ahorrar cientos de horas a tu personal.</p>
+          </a>
+
+          <a href="/desarrollo-software-ecuador" class="card-box" style="text-decoration: none;">
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">04 / SOFTWARE A TU MEDIDA</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem; color: var(--text-main);">Plataformas Personalizadas</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Software diseñado específicamente para las necesidades únicas de tu negocio, sin las limitaciones de plantillas genéricas.</p>
+          </a>
+
           <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">01 / OPERACIONES CENTRALIZADAS</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Aplicaciones Empresariales</h3>
-            <p class="body-sm">Sistemas completos accesibles desde cualquier navegador para administrar, controlar y auditar las actividades de tu empresa.</p>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">05 / TOMA DE DECISIONES</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem;">Inteligencia y Datos</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Dashboards ejecutivos y reportes en tiempo real que consolidan la información crítica de tu empresa.</p>
           </div>
 
           <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">02 / EQUIPOS Y CLIENTES</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Aplicaciones Móviles</h3>
-            <p class="body-sm">Apps intuitivas diseñadas para que tus empleados en terreno o tus clientes interactúen desde cualquier lugar sin depender de una computadora.</p>
-          </div>
-
-          <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">03 / EFICIENCIA OPERATIVA</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Automatización de Procesos</h3>
-            <p class="body-sm">Convertimos tareas manuales repetitivas en flujos digitales automáticos para ahorrar cientos de horas a tu personal.</p>
-          </div>
-
-          <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">04 / SOFTWARE A TU MEDIDA</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Plataformas Personalizadas</h3>
-            <p class="body-sm">Software diseñado específicamente para las necesidades únicas de tu negocio, sin las limitaciones de plantillas genéricas.</p>
-          </div>
-
-          <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">05 / TOMA DE DECISIONES</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Inteligencia y Datos</h3>
-            <p class="body-sm">Dashboards ejecutivos y reportes en tiempo real que consolidan la información crítica de tu empresa.</p>
-          </div>
-
-          <div class="card-box">
-            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow);">06 / CONECTIVIDAD</span>
-            <h3 class="title-card" style="margin: 0.5rem 0;">Integraciones de Herramientas</h3>
-            <p class="body-sm">Conectamos el nuevo software con las herramientas, bases de datos o facturación que tu empresa ya utiliza.</p>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--brand-cyan-glow); font-weight: 600;">06 / CONECTIVIDAD</span>
+            <h3 class="title-card" style="margin: 0.5rem 0 0.4rem;">Integraciones de Herramientas</h3>
+            <p class="body-sm" style="color: var(--text-muted);">Conectamos el nuevo software con las herramientas, bases de datos o facturación que tu empresa ya utiliza.</p>
           </div>
         </div>
 
-        <div style="margin-top: 5rem; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; text-align: center;">
-          <h3 style="font-size: 1.1rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 1rem;">
-            Sección Secundaria: Stack de Tecnologías Profesionales
+        <!-- Stack de Tecnologías Profesional Compacto -->
+        <div style="margin-top: 3rem; background: var(--surface-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem; text-align: center;">
+          <h3 style="font-size: 1rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; margin-bottom: 0.75rem;">
+            Stack de Tecnologías Profesionales
           </h3>
-          <p style="font-size: 0.92rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 1.5rem;">
-            Construimos con tecnologías modernas y herramientas profesionales de código limpio:
+          <p style="font-size: 0.92rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 1.25rem;">
+            Construimos con herramientas profesionales de código limpio y arquitectura escalable:
           </p>
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;">
             <span style="background: rgba(255,255,255,0.04); border: 1px solid var(--border-subtle); padding: 0.4rem 0.85rem; border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">Laravel 11</span>
@@ -146,62 +149,13 @@
 
   <footer class="footer-corporate">
     <div class="container">
-      <div class="footer-nav-grid">
-        <div>
-          <a href="/" class="brand-wrapper" style="margin-bottom: 1.25rem;">
-            <svg class="brand-icon-svg" viewBox="0 0 100 100" fill="none">
-              <path d="M 68 22 C 55 12, 35 12, 22 25 C 9 38, 9 62, 22 75 C 35 88, 55 88, 68 78 L 58 64 C 49 71, 36 71, 28 62 C 20 53, 20 37, 28 28 C 36 19, 49 19, 58 26 Z" fill="url(#cGrad)" />
-              <rect x="66" y="16" width="9" height="9" fill="#06b6d4" rx="2" />
-              <rect x="78" y="16" width="9" height="9" fill="#38bdf8" rx="2" />
-              <rect x="72" y="27" width="9" height="9" fill="#0284c7" rx="2" />
-            </svg>
-            <span class="brand-text">Conix<span>Dev</span></span>
-          </a>
-          <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 320px; line-height: 1.6;">
-            Desarrollamos el software que tu empresa necesita. Transformamos operaciones manuales en sistemas de alto rendimiento.
-          </p>
-          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--brand-cyan-glow); font-weight: 600;">
-            🇪🇨 Desde Ecuador, construyendo software de nivel internacional.
-          </p>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Empresa</h4>
-          <ul class="footer-nav-links">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/casos-de-exito/cassara-ecuador">Caso Cassará Ecuador</a></li>
-            <li><a href="/nosotros">Sobre ConixDev</a></li>
-            <li><a href="/contacto">Contacto Directo</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Capacidades</h4>
-          <ul class="footer-nav-links">
-            <li><a href="/servicios">Aplicaciones Empresariales</a></li>
-            <li><a href="/servicios">Aplicaciones Móviles</a></li>
-            <li><a href="/servicios">Sistemas de Geolocalización</a></li>
-            <li><a href="/servicios">Inteligencia Artificial & Facturación</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Contacto</h4>
-          <ul class="footer-nav-links">
-            <li><a href="/diagnostico">Solicitar Propuesta</a></li>
-            <li><a href="https://wa.me/593962761063" target="_blank">WhatsApp (+593 96 276 1063)</a></li>
-            <li><a href="https://github.com/Nicolopexs" target="_blank">GitHub Developer</a></li>
-          </ul>
-        </div>
-      </div>
-
       <div class="footer-bottom-bar">
         <p>© 2026 ConixDev. Todos los derechos reservados. | conixdev.com</p>
-        <p>Software Empresarial Hecho a Medida</p>
+        <p>Capacidades y Soluciones de Software Empresarial</p>
       </div>
     </div>
   </footer>
 
-  <script src="/js/app.js?v=3.0.0"></script>
+  <script src="/js/app.js?v=6.0.0"></script>
 </body>
 </html>

@@ -37,25 +37,25 @@
 }
 </script>
 
-<section style="padding-top: 7.5rem; padding-bottom: 4rem; position: relative;">
+<section style="padding-top: 6.5rem; padding-bottom: 1.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 0.75rem;">
       <span class="trust-badge-dot"></span>
-      Criterios Técnicos para Líderes de Negocio
+      Criterios Ejecutivos & Arquitectura de Software
     </div>
 
-    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
-      Centro de <span class="text-gradient">Conocimiento en Software</span>
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 0.75rem;">
+      Centro de <span class="text-gradient">Conocimiento de Software</span>
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 780px; margin: 0 auto 2.5rem; line-height: 1.6;">
-      Respuestas claras, análisis de ROI y criterios de ingeniería para tomar decisiones estratégicas de tecnología en tu empresa.
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 1.25rem; line-height: 1.6;">
+      Guías técnicas, análisis de retorno de inversión y comparativas estratégicas escritas para directivos y líderes de tecnología en Ecuador.
     </p>
   </div>
 </section>
 
-<section class="section-spacing section-alt-bg">
+<section class="section-spacing section-alt-bg" style="padding-top: 0.5rem;">
   <div class="container">
     <div class="cards-layout-grid">
       <a href="{{ url('/blog/cuanto-cuesta-desarrollar-software-ecuador') }}" class="card-box" style="text-decoration: none; display: flex; flex-direction: column; justify-content: space-between;">

@@ -42,20 +42,21 @@
 }
 </script>
 
-<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
+  <!-- HERO AUTOMATIZACIÓN DE PROCESOS -->
+<section style="padding-top: 6.5rem; padding-bottom: 1.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 0.75rem;">
       <span class="trust-badge-dot"></span>
-      Flujos Automatizados & Inteligencia Artificial
+      Automatización con IA & Integración de APIs
     </div>
 
-    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
-      Automatización de <span class="text-gradient">Procesos e Inteligencia Artificial</span>
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 0.75rem;">
+      Automatización de <span class="text-gradient">Procesos Empresariales</span>
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2.25rem; line-height: 1.6;">
-      Convertimos tareas manuales repetitivas en flujos digitales automáticos. Ahorra cientos de horas hombre procesando documentos, facturas y reportes al instante.
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 1.25rem; line-height: 1.6;">
+      Eliminamos la digitación manual repetitiva en tu empresa. Automatizamos la lectura de facturas físicas con IA (OCR), procesamiento de documentos y sincronización entre plataformas.
     </p>
 
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">

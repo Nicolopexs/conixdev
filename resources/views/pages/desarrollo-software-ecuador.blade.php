@@ -84,23 +84,23 @@
 </script>
 
 <!-- HERO DE SERVICIO LOCAL ECUADOR -->
-<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
+<section style="padding-top: 6.5rem; padding-bottom: 1.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 0.75rem;">
       <span class="trust-badge-dot"></span>
       Ingeniería de Software Local en Ecuador & Quito
     </div>
 
-    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 0.75rem;">
       Desarrollo de <span class="text-gradient">Software a Medida en Ecuador</span>
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2.25rem; line-height: 1.6;">
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 1.25rem; line-height: 1.6;">
       Ayudamos a empresas ecuatorianas a reemplazar hojas de cálculo de Excel y chats dispersos de WhatsApp por sistemas informáticos propios, seguros y diseñados exactamente para su operación.
     </p>
 
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem;">
       <a href="#contacto-directo" class="btn-action btn-primary-glow" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
         <span>Solicitar Diagnóstico Técnico en Ecuador</span>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 12h14M12 5l7 7-7 7" stroke-width="2" stroke-linecap="round"/></svg>

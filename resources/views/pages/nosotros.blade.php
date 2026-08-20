@@ -4,19 +4,19 @@
 @section('description', 'Conoce a ConixDev: empresa tecnológica nacida en Ecuador creando software de nivel internacional para empresas que buscan controlar y escalar sus operaciones.')
 
 @section('content')
-<section style="padding-top: 7rem; padding-bottom: 2.5rem;">
+<section style="padding-top: 6.5rem; padding-bottom: 1rem;">
   <div class="container">
-    <span class="trust-badge">Filosofía & Identidad</span>
-    <h1 class="title-hero" style="margin-bottom: 1rem;">
+    <span class="trust-badge" style="margin-bottom: 0.75rem;">Filosofía & Identidad</span>
+    <h1 class="title-hero" style="margin-bottom: 0.75rem;">
       Sobre <span class="text-gradient">ConixDev</span>
     </h1>
-    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+    <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 800px; line-height: 1.6;">
       Desde Ecuador, construimos software de nivel internacional para empresas que quieren crecer y controlar mejor sus procesos.
     </p>
   </div>
 </section>
 
-<section class="section-spacing">
+<section class="section-spacing" style="padding-top: 0.5rem;">
   <div class="container">
     <div class="contact-simple-card" style="max-width: 860px; margin-bottom: 3rem;">
       <h2 class="title-section" style="font-size: 1.8rem; margin-bottom: 1.25rem;">Nuestra Forma de Trabajar</h2>

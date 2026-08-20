@@ -42,20 +42,21 @@
 }
 </script>
 
-<section style="padding-top: 7.5rem; padding-bottom: 3.5rem; position: relative;">
+<!-- HERO APPS MÓVILES -->
+<section style="padding-top: 6.5rem; padding-bottom: 1.5rem; position: relative;">
   <div class="canvas-glow-1"></div>
   <div class="container" style="text-align: center;">
-    <div class="trust-badge" style="margin-bottom: 1.25rem;">
+    <div class="trust-badge" style="margin-bottom: 0.75rem;">
       <span class="trust-badge-dot"></span>
-      Apps Empresariales para iOS & Android
+      Desarrollo Móvil iOS & Android Empresarial
     </div>
 
-    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 1.25rem;">
+    <h1 class="title-hero" style="max-width: 950px; margin: 0 auto 0.75rem;">
       Desarrollo de <span class="text-gradient">Aplicaciones Móviles Empresariales</span>
     </h1>
 
-    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2.25rem; line-height: 1.6;">
-      Construimos aplicaciones móviles personalizadas para smartphones que conectan a tu personal de campo con la central de tu empresa en tiempo real.
+    <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 1.25rem; line-height: 1.6;">
+      Construimos aplicaciones móviles nativas e híbridas diseñadas para operar en campo, registrar auditorías con GPS, tomar fotografías y capturar firmas sin conexión a internet.
     </p>
 
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
