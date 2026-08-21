@@ -29,6 +29,30 @@ Route::get('/automatizacion-procesos', [PageController::class, 'automatizacionPr
 Route::get('/casos-de-exito', [PageController::class, 'casosIndex'])->name('casos.index');
 Route::get('/casos-de-exito/cassara-ecuador', [PageController::class, 'cassaraDetail'])->name('casos.cassara');
 
+// Landing pages SEO para Apps de Visitadores Médicos & Industria Farmacéutica
+$pharmaRoutes = [
+    '/demos/app-visitadores-medicos',
+    '/software-para-visitadores-medicos',
+    '/app-para-visitadores-medicos',
+    '/app-para-controlar-visitadores-medicos',
+    '/app-para-empresas-farmaceuticas',
+    '/software-para-fuerza-de-ventas-farmaceutica',
+    '/app-para-visitas-medicas',
+    '/control-de-visitas-medicas',
+    '/seguimiento-de-visitadores-medicos',
+    '/planificacion-de-visitas-medicas',
+    '/geolocalizacion-de-visitadores-medicos',
+    '/reportes-de-visitadores-medicos',
+    '/control-de-rutas-visitadores-medicos',
+    '/app-para-visitadores-medicos-ecuador',
+    '/software-visitadores-medicos-ecuador',
+    '/app-farmaceutica-ecuador',
+];
+foreach ($pharmaRoutes as $route) {
+    Route::get($route, [PageController::class, 'cassaraDetail']);
+}
+
+
 // Centro de Conocimiento / Blog (Respuestas para Búsquedas por IA & Google)
 Route::get('/blog', [PageController::class, 'blogIndex'])->name('blog.index');
 Route::get('/blog/cuanto-cuesta-desarrollar-software-ecuador', [PageController::class, 'blogCostoSoftware'])->name('blog.costo-software');
