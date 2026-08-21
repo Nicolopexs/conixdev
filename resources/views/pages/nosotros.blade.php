@@ -21,7 +21,7 @@
     <div class="contact-simple-card" style="max-width: 860px; margin-bottom: 3rem;">
       <h2 class="title-section" style="font-size: 1.8rem; margin-bottom: 1.25rem;">Nuestra Forma de Trabajar</h2>
       <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem;">
-        No pretendemos ser una agencia masiva que revende plantillas. Somos un equipo de ingeniería extremadamente competente que analiza la realidad de tu empresa y programa el sistema exacto que tu negocio necesita.
+        No pretendemos ser una agencia masiva que revende plantillas. Somos un equipo de desarrollo extremadamente dedicado que analiza la realidad de tu empresa y programa el sistema exacto que tu negocio necesita.
       </p>
 
       <p style="font-size: 1rem; color: var(--brand-cyan-glow); font-weight: 600; margin-bottom: 2rem;">
@@ -31,7 +31,7 @@
       <div style="border-top: 1px solid var(--border-subtle); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
         <div>
           <strong style="font-size: 1.1rem; color: var(--text-main); display: block;">Nico López // ConixDev</strong>
-          <span style="color: var(--text-muted); font-size: 0.9rem;">Lead Software Engineer & Fundador</span>
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Desarrollador Principal & Fundador</span>
         </div>
         <div>
           <a href="{{ url('/diagnostico') }}" class="btn-action btn-primary-glow">

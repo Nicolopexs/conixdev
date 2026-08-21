@@ -151,7 +151,7 @@
 <section class="section-spacing section-alt-bg">
   <div class="container">
     <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
-      <span class="trust-badge" style="margin-bottom: 0.75rem;">Capacidades de Ingeniería</span>
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Capacidades de Desarrollo</span>
       <h2 class="title-section">Soluciones de Software que Impulsan tu Negocio</h2>
       <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.75rem;">
         Desarrollamos soluciones tecnológicas con arquitecturas modernas, escalables y seguras, diseñadas a la medida exacta de tus requerimientos.
@@ -278,12 +278,12 @@
   </div>
 </section>
 
-<!-- 5. METODOLOGÍA DE INGENIERÍA — Cómo Trabajamos -->
+<!-- 5. METODOLOGÍA DE DESARROLLO — Cómo Trabajamos -->
 <section class="section-spacing">
   <div class="container">
     <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
       <span class="trust-badge" style="margin-bottom: 0.75rem;">Metodología Probada</span>
-      <h2 class="title-section">Nuestro Proceso de Ingeniería</h2>
+      <h2 class="title-section">Nuestro Proceso de Desarrollo</h2>
       <p style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.75rem;">
         Garantizamos entregas predecibles, código de calidad y transparencia en cada etapa de tu proyecto.
       </p>
@@ -333,7 +333,7 @@
 
       <div class="card-box">
         <h3 class="title-card" style="margin-bottom: 0.5rem;">Soporte Local y Directo</h3>
-        <p class="body-sm">Atención directa con ingenieros de software en Ecuador sin tickets lentos ni intermediarios que no entienden tu negocio.</p>
+        <p class="body-sm">Atención directa con especialistas en desarrollo de software en Ecuador sin tickets lentos ni intermediarios que no entienden tu negocio.</p>
       </div>
 
       <div class="card-box">

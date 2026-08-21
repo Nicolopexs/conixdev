@@ -70,7 +70,7 @@
   <div class="container" style="text-align: center;">
     <div class="trust-badge" style="margin-bottom: 1rem;">
       <span class="trust-badge-dot"></span>
-      Soluciones de Ingeniería de Software Empresarial
+      Soluciones Profesionales de Software Empresarial
     </div>
 
     <h1 class="title-hero" style="max-width: 980px; margin: 0 auto 1.25rem;">
@@ -152,8 +152,8 @@
         <div class="card-icon-svg">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
         </div>
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Integración de APIs y Facturación SRI</h3>
-        <p class="body-sm">Conectividad directa con Web Services del SRI de Ecuador, pasarelas de pago, CRMs y sistemas contables heredados.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Integración de APIs y Plataformas</h3>
+        <p class="body-sm">Conectividad directa con servicios web externos, pasarelas de pago, CRMs y sistemas contables u operativos.</p>
         <a href="{{ url('/desarrollo-software-ecuador') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 0.75rem;">Saber más →</a>
       </div>
     </div>
@@ -164,7 +164,7 @@
 <section class="section-spacing">
   <div class="container">
     <div style="text-align: center; max-width: 820px; margin: 0 auto 2.5rem;">
-      <span class="trust-badge" style="margin-bottom: 0.75rem;">Ingeniería Transparente</span>
+      <span class="trust-badge" style="margin-bottom: 0.75rem;">Metodología Transparente</span>
       <h2 class="title-section">Nuestro Ciclo de Desarrollo</h2>
     </div>
 
@@ -202,7 +202,7 @@
     <div class="contact-simple-card">
       <div style="text-align: center; margin-bottom: 2rem;">
         <span class="trust-badge" style="margin-bottom: 0.75rem;">Contacto Directo</span>
-        <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con un Ingeniero de Software</h2>
+        <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con un Desarrollador de Software</h2>
         <p style="color: var(--text-muted); font-size: 1.05rem;">Sin compromisos ni intermediarios. Evaluamos la factibilidad técnica de tu proyecto.</p>
       </div>
 

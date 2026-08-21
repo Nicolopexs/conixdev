@@ -50,7 +50,7 @@
           "name": "¿ConixDev atiende empresas en Quito y sus valles?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, nuestra sede principal de ingeniería opera desde Quito y atendemos empresas en el Centro Financiero, Cumbayá, Tumbaco, Valle de los Chillos y a nivel nacional."
+            "text": "Sí, nuestra sede principal de operaciones funciona desde Quito y atendemos empresas en el Centro Financiero, Cumbayá, Tumbaco, Valle de los Chillos y a nivel nacional."
           }
         },
         {
@@ -72,7 +72,7 @@
   <div class="container" style="text-align: center;">
     <div class="trust-badge" style="margin-bottom: 1rem;">
       <span class="trust-badge-dot"></span>
-      Sede de Ingeniería en Quito, Pichincha
+      Base de Operaciones en Quito, Pichincha
     </div>
 
     <h1 class="title-hero" style="max-width: 980px; margin: 0 auto 1.25rem;">
@@ -80,7 +80,7 @@
     </h1>
 
     <p style="font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--text-muted); max-width: 820px; margin: 0 auto 2rem; line-height: 1.6;">
-      Construimos soluciones tecnológicas a medida para corporaciones, distribuidoras y pymes en Quito. Desde sistemas de trazabilidad y geolocalización hasta facturación electrónica con el SRI y automatización con IA.
+      Construimos soluciones tecnológicas a medida para corporaciones, distribuidoras y pymes en Quito. Desde sistemas de trazabilidad y geolocalización hasta integración de APIs y automatización con IA.
     </p>
 
     <!-- MOCKUP VISUAL SOFTWARE -->
@@ -125,7 +125,7 @@
     <div class="cards-layout-grid" style="margin-top: 1.5rem;">
       <div class="card-box">
         <h3 class="title-card" style="margin-bottom: 0.5rem;">Sistemas de Gestión a Medida</h3>
-        <p class="body-sm">Plataformas web que centralizan compras, inventarios, facturación electrónica del SRI y reportería ejecutiva en un solo lugar.</p>
+        <p class="body-sm">Plataformas web que centralizan compras, inventarios, gestión de operaciones y reportería ejecutiva en un solo lugar.</p>
         <a href="{{ url('/software-empresarial') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 0.75rem;">Ver software empresarial →</a>
       </div>
 
@@ -142,8 +142,8 @@
       </div>
 
       <div class="card-box">
-        <h3 class="title-card" style="margin-bottom: 0.5rem;">Integraciones SRI y Pasarelas</h3>
-        <p class="body-sm">Conectividad con Web Services del SRI, bancos locales, Kushki, Payphone y plataformas contables.</p>
+        <h3 class="title-card" style="margin-bottom: 0.5rem;">Integraciones de APIs y Pasarelas</h3>
+        <p class="body-sm">Conectividad con APIs externas, bancos locales, Kushki, Payphone y plataformas contables u operativas.</p>
         <a href="{{ url('/desarrollo-software-ecuador') }}" style="color: var(--brand-cyan-glow); font-weight: 600; font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 0.75rem;">Ver integraciones →</a>
       </div>
     </div>
@@ -157,7 +157,7 @@
       <div style="text-align: center; margin-bottom: 2rem;">
         <span class="trust-badge" style="margin-bottom: 0.75rem;">Atención en Quito</span>
         <h2 class="title-section" style="margin-bottom: 0.5rem;">Hablar con ConixDev en Quito</h2>
-        <p style="color: var(--text-muted); font-size: 1.05rem;">Atención directa con ingenieros de software. Evaluamos tus requerimientos técnicos.</p>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">Atención directa con especialistas en desarrollo de software. Evaluamos tus requerimientos técnicos.</p>
       </div>
 
       <div id="contactSuccessAlert" style="display: none; background: rgba(6, 182, 212, 0.15); border: 1px solid rgba(6, 182, 212, 0.3); color: var(--brand-cyan-glow); padding: 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; text-align: center; font-weight: 600;">
